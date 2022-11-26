@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">MissOurTrip</string>
+    <string name="welcome_back_to_missourtrip">Welcome back to MissOurTrip!</string>
+    <string name="password">Password</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="login">Login</string>
+    <string name="reset_password"><u>Reset Password?</u></string>
+    <string name="signup">signup</string>
+    <string name="already_registered_login_here"><u>Already registered? Login here...</u></string>
+    <string name="new_to_missourtrip_sign_up_with_a_new_password">New to MissOurTrip? Sign up with a new password!</string>
+    <string name="new_to_missourtrip">New to MissOurTrip?</string>
+    <string name="sign_up_with_a_new_password">Sign up with a new password</string>
+    <string name="existing_password_reminder">You have already signed up before! Please login!</string>
+    <string name="create_account">Create Account</string>
+    <string name="home">Home</string>
+    <string name="reset_password_title">Reset Password</string>
+    <string name="please_enter_current_password">Please enter current password</string>
+</resources>
