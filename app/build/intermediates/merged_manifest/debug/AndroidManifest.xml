@@ -21,27 +21,9 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/Theme.MissOurTrip" >
+        <activity android:name="com.example.missourtrip.AddExpenseActivity" />
         <activity
-            android:name="com.example.missourtrip.ResetPasswordActivity"
-            android:parentActivityName="com.example.missourtrip.HomeActivity" >
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".HomeActivity" />
-            android:exported="false" >
-        </activity>
-        <activity
-            android:name="com.example.missourtrip.HomeActivity"
-            android:exported="false" />
-        <activity
-            android:name="com.example.missourtrip.LoginActivity"
-            android:parentActivityName="com.example.missourtrip.MainActivity" >
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity" />
-            android:exported="true" >
-        </activity>
-        <activity
-            android:name="com.example.missourtrip.MainActivity"
+            android:name="com.example.missourtrip.ExpenseActivity"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -49,6 +31,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <service
+            android:name="androidx.room.MultiInstanceInvalidationService"
+            android:directBootAware="true"
+            android:exported="false" />
 
         <provider
             android:name="androidx.startup.InitializationProvider"

@@ -3,6 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/user/Documents/GitHub/ISOM3000G_MissOurTrip/app/src/main/res/layout/activity_expense_add.xml" value="0.1" />
+        <entry key="..\:/Users/user/Documents/GitHub/ISOM3000G_MissOurTrip/app/src/main/res/layout/activity_expense_main.xml" value="0.1" />
+        <entry key="..\:/Users/user/Documents/GitHub/ISOM3000G_MissOurTrip/app/src/main/res/layout/expense_layout.xml" value="0.17916666666666667" />
         <entry key="app/src/main/res/layout/activity_category_add.xml" value="0.14356884057971014" />
         <entry key="app/src/main/res/layout/activity_home.xml" value="0.335" />
         <entry key="app/src/main/res/layout/activity_login.xml" value="0.335" />
