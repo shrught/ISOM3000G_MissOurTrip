@@ -23,7 +23,6 @@ class ExpenseAdapter(private var expenses: List<Expense>): RecyclerView.Adapter<
 
     override fun onBindViewHolder(holder: ExpenseHolder, position: Int) {
         val expense = expenses[position]
-        val context = holder.amount.context
 
         holder.name.text = expense.name
         holder.amount.text = "$%.2f".format(expense.amount)
