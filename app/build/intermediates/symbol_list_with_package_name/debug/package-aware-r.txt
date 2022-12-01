@@ -2744,10 +2744,13 @@ id bounceStart
 id buttonPanel
 id cache_measures
 id callMeasure
-id cancel_btn
 id cancel_button
 id carryVelocity
 id cate_add_btn
+id cate_cancel_btn
+id cate_desc
+id cate_name
+id cate_save_btn
 id center
 id centerCrop
 id centerInside
@@ -2831,7 +2834,6 @@ id exp_category
 id exp_currency
 id exp_date
 id exp_name
-id exp_name2
 id exp_name3
 id exp_save_btn
 id expand_activities_button
@@ -2969,7 +2971,6 @@ id navigation_header_container
 id never
 id neverCompleteToEnd
 id neverCompleteToStart
-id new_cate_save_btn
 id new_password
 id new_password_description
 id noScroll
@@ -3025,7 +3026,6 @@ id scrollIndicatorDown
 id scrollIndicatorUp
 id scrollView
 id scrollView3
-id scrollView4
 id scrollable
 id search_badge
 id search_bar
@@ -3119,7 +3119,6 @@ id textView5
 id textView6
 id textView7
 id textView8
-id textView9
 id text_input_end_icon
 id text_input_error_icon
 id text_input_start_icon
@@ -3161,6 +3160,7 @@ id view_tree_saved_state_registry_owner
 id view_tree_view_model_store_owner
 id visible
 id visible_removing_fragment_view_tag
+id warningAddCate
 id warningAddExp
 id west
 id withText
@@ -3302,6 +3302,7 @@ layout activity_home
 layout activity_login
 layout activity_main
 layout activity_reset_password
+layout category_layout
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog

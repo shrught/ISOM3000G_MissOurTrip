@@ -21,9 +21,9 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/Theme.MissOurTrip" >
-        <activity android:name="com.example.missourtrip.AddExpenseActivity" />
+        <activity android:name="com.example.missourtrip.AddCategoryActivity" />
         <activity
-            android:name="com.example.missourtrip.ExpenseActivity"
+            android:name="com.example.missourtrip.CategoryActivity"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

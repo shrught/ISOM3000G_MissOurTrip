@@ -12,9 +12,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MissOurTrip">
-        <activity android:name=".AddExpenseActivity"></activity>
+        <activity android:name=".AddCategoryActivity"></activity>
         <activity
-            android:name=".ExpenseActivity"
+            android:name=".CategoryActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>

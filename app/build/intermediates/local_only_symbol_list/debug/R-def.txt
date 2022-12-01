@@ -13,8 +13,11 @@ id add_btn
 id add_parti_btn
 id amount
 id apply_btn
-id cancel_btn
 id cate_add_btn
+id cate_cancel_btn
+id cate_desc
+id cate_name
+id cate_save_btn
 id current_password
 id current_password_description
 id editTextTextPersonName
@@ -23,7 +26,6 @@ id exp_category
 id exp_currency
 id exp_date
 id exp_name
-id exp_name2
 id exp_name3
 id exp_save_btn
 id export_btn
@@ -34,13 +36,11 @@ id login_password
 id login_title
 id my_amount
 id name
-id new_cate_save_btn
 id new_password
 id new_password_description
 id recycleView
 id reset_password_title
 id scrollView3
-id scrollView4
 id signup_btn
 id signup_description1
 id signup_description2
@@ -61,9 +61,9 @@ id textView5
 id textView6
 id textView7
 id textView8
-id textView9
 id to_login_page
 id to_set_password
+id warningAddCate
 id warningAddExp
 layout activity_category_add
 layout activity_category_main
@@ -74,6 +74,7 @@ layout activity_home
 layout activity_login
 layout activity_main
 layout activity_reset_password
+layout category_layout
 layout expense_layout
 mipmap ic_launcher
 mipmap ic_launcher_round

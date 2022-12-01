@@ -33,13 +33,13 @@
 22        android:testOnly="true"
 23        android:theme="@style/Theme.MissOurTrip" >
 23-->C:\Users\user\Documents\GitHub\ISOM3000G_MissOurTrip\app\src\main\AndroidManifest.xml:14:9-49
-24        <activity android:name="com.example.missourtrip.AddExpenseActivity" />
-24-->C:\Users\user\Documents\GitHub\ISOM3000G_MissOurTrip\app\src\main\AndroidManifest.xml:15:9-65
-24-->C:\Users\user\Documents\GitHub\ISOM3000G_MissOurTrip\app\src\main\AndroidManifest.xml:15:19-53
+24        <activity android:name="com.example.missourtrip.AddCategoryActivity" />
+24-->C:\Users\user\Documents\GitHub\ISOM3000G_MissOurTrip\app\src\main\AndroidManifest.xml:15:9-66
+24-->C:\Users\user\Documents\GitHub\ISOM3000G_MissOurTrip\app\src\main\AndroidManifest.xml:15:19-54
 25        <activity
 25-->C:\Users\user\Documents\GitHub\ISOM3000G_MissOurTrip\app\src\main\AndroidManifest.xml:16:9-24:20
-26            android:name="com.example.missourtrip.ExpenseActivity"
-26-->C:\Users\user\Documents\GitHub\ISOM3000G_MissOurTrip\app\src\main\AndroidManifest.xml:17:13-44
+26            android:name="com.example.missourtrip.CategoryActivity"
+26-->C:\Users\user\Documents\GitHub\ISOM3000G_MissOurTrip\app\src\main\AndroidManifest.xml:17:13-45
 27            android:exported="true" >
 27-->C:\Users\user\Documents\GitHub\ISOM3000G_MissOurTrip\app\src\main\AndroidManifest.xml:18:13-36
 28            <intent-filter>

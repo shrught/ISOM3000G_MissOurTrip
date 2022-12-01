@@ -103,16 +103,16 @@ MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\user\.gradle\cache
 		ADDED from C:\Users\user\Documents\GitHub\ISOM3000G_MissOurTrip\app\src\main\AndroidManifest.xml:14:9-49
 	android:dataExtractionRules
 		ADDED from C:\Users\user\Documents\GitHub\ISOM3000G_MissOurTrip\app\src\main\AndroidManifest.xml:8:9-65
-activity#com.example.missourtrip.AddExpenseActivity
-ADDED from C:\Users\user\Documents\GitHub\ISOM3000G_MissOurTrip\app\src\main\AndroidManifest.xml:15:9-65
+activity#com.example.missourtrip.AddCategoryActivity
+ADDED from C:\Users\user\Documents\GitHub\ISOM3000G_MissOurTrip\app\src\main\AndroidManifest.xml:15:9-66
 	android:name
-		ADDED from C:\Users\user\Documents\GitHub\ISOM3000G_MissOurTrip\app\src\main\AndroidManifest.xml:15:19-53
-activity#com.example.missourtrip.ExpenseActivity
+		ADDED from C:\Users\user\Documents\GitHub\ISOM3000G_MissOurTrip\app\src\main\AndroidManifest.xml:15:19-54
+activity#com.example.missourtrip.CategoryActivity
 ADDED from C:\Users\user\Documents\GitHub\ISOM3000G_MissOurTrip\app\src\main\AndroidManifest.xml:16:9-24:20
 	android:exported
 		ADDED from C:\Users\user\Documents\GitHub\ISOM3000G_MissOurTrip\app\src\main\AndroidManifest.xml:18:13-36
 	android:name
-		ADDED from C:\Users\user\Documents\GitHub\ISOM3000G_MissOurTrip\app\src\main\AndroidManifest.xml:17:13-44
+		ADDED from C:\Users\user\Documents\GitHub\ISOM3000G_MissOurTrip\app\src\main\AndroidManifest.xml:17:13-45
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
 ADDED from C:\Users\user\Documents\GitHub\ISOM3000G_MissOurTrip\app\src\main\AndroidManifest.xml:19:13-23:29
 action#android.intent.action.MAIN

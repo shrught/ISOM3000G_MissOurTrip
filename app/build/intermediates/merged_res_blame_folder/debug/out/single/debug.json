@@ -100,6 +100,10 @@
         "source": "com.example.missourtrip.app-main-31:/mipmap-anydpi-v26/ic_launcher_round.xml"
     },
     {
+        "merged": "com.example.missourtrip.app-merged_res-29:/layout_category_layout.xml.flat",
+        "source": "com.example.missourtrip.app-main-31:/layout/category_layout.xml"
+    },
+    {
         "merged": "com.example.missourtrip.app-merged_res-29:/xml_data_extraction_rules.xml.flat",
         "source": "com.example.missourtrip.app-main-31:/xml/data_extraction_rules.xml"
     }
