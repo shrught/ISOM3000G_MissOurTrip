@@ -15,4 +15,8 @@
     <string name="home">Home</string>
     <string name="reset_password_title">Reset Password</string>
     <string name="please_enter_current_password">Please enter current password</string>
+    <string name="categories">Categories</string>
+    <string name="exchange_rates">Exchange Rates</string>
+    <string name="statictics">Statictics</string>
+    <string name="expenses">Expenses</string>
 </resources>

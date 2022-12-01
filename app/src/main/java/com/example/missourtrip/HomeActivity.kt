@@ -15,7 +15,7 @@ class HomeActivity : AppCompatActivity() {
 
         val path = filesDir
         val saved_password = File(path, "password.txt")
-        home_text.setText(saved_password.readText())
+
 
     }
 
