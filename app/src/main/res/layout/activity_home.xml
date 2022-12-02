@@ -20,7 +20,8 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/to_exchange_rates_btn"
-        app:layout_constraintVertical_bias="0.468" />
+        app:layout_constraintVertical_bias="0.468"
+        tools:ignore="TextContrastCheck" />
 
     <Button
         android:id="@+id/to_exchange_rates_btn"
@@ -36,22 +37,25 @@
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/to_category_btn"
-        app:layout_constraintVertical_bias="0.562" />
+        app:layout_constraintVertical_bias="0.562"
+        tools:ignore="TextContrastCheck" />
 
     <Button
         android:id="@+id/to_category_btn"
         android:layout_width="wrap_content"
         android:layout_height="60dp"
         android:layout_marginBottom="472dp"
+        android:onClick="toCategories"
         android:text="@string/categories"
         android:textColor="#000000"
         app:backgroundTint="@color/teal_700"
-        app:layout_constraintBottom_toBottomOf="parent"
 
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/to_expense_btn"
-        app:layout_constraintVertical_bias="0.8" />
+        app:layout_constraintVertical_bias="0.8"
+        tools:ignore="TextContrastCheck" />
 
     <Button
         android:id="@+id/to_expense_btn"
@@ -66,7 +70,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/home_title"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="TextContrastCheck" />
 
     <TextView
         android:id="@+id/home_title"
@@ -88,7 +93,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="52dp"
         android:minHeight="48dp"
-        android:onClick="to_reset_password"
+        android:onClick="toResetPassword"
         android:text="@string/reset_password"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

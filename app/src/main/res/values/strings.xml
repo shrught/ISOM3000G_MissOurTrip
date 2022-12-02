@@ -19,4 +19,9 @@
     <string name="exchange_rates">Exchange Rates</string>
     <string name="statictics">Statictics</string>
     <string name="expenses">Expenses</string>
+    <string name="add_category">Add Category</string>
+    <string name="new_category">New Category</string>
+    <string name="description">Description</string>
+    <string name="category_name">Category Name</string>
+    <string name="save">Save</string>
 </resources>
