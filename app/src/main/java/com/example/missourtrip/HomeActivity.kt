@@ -15,14 +15,19 @@ class HomeActivity : AppCompatActivity() {
 
         val path = filesDir
         val saved_password = File(path, "password.txt")
-        home_text.setText(saved_password.readText())
+
 
     }
 
-    fun to_reset_password(view: View){
-        val reset_password_intent = Intent(this, ResetPasswordActivity::class.java).apply {
+    fun toResetPassword(view: View){
+        val ResetPasswordIntent = Intent(this, ResetPasswordActivity::class.java).apply {
 
         }
-        startActivity(reset_password_intent)
+        startActivity(ResetPasswordIntent)
+    }
+
+    fun toCategories(view: View){
+        val categoriesIntent = Intent(this, CategoryMain::class.java).apply {  }
+        startActivity(categoriesIntent)
     }
 }

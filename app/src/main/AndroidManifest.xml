@@ -14,6 +14,20 @@
         android:theme="@style/Theme.MissOurTrip"
         tools:targetApi="31">
         <activity
+            android:name=".CategoryAdd"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".CategoryMain"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".ResetPasswordActivity"
             android:parentActivityName=".HomeActivity">
             <meta-data
