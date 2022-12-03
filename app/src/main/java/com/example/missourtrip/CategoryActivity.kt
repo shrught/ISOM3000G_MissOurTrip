@@ -85,7 +85,7 @@ class CategoryActivity : AppCompatActivity() {
         GlobalScope.launch {
             db.categoryDao().delete(category)
 
-            categories = categories.filter { it.id != category.id }
+            categories = categories.filter { it.name != category.name }
             runOnUiThread {}
         }
     }

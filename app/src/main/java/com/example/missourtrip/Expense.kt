@@ -11,10 +11,10 @@ data class Expense(
     @PrimaryKey(autoGenerate = true) val id: Int,
     val name: String,
     val amount: Double,
-    //val currency: String,
-    //val date: String,
+    val currency: String,
+    val date: String,
     val category: String,
-    //val split: Boolean
+    val split: Boolean
 ):Serializable {
 
 }

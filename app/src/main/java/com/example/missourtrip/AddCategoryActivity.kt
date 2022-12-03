@@ -29,7 +29,7 @@ class AddCategoryActivity : AppCompatActivity() {
                 warningAddCate.text = "Please enter a valid name"
             }
             else {
-                val category = Category(0, name, description)
+                val category = Category( name, description)
                 insert(category)
             }
         }
