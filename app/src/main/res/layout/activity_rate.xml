@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RateActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/exchange_rate"
+        android:textColor="@color/purple_500"
+        android:textSize="30sp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lastUpdated"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/last_updated"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:layout_marginTop="20dp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title" />
+
+    <TextView
+        android:id="@+id/baseCurrency"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/base_currency"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lastUpdated" />
+
+    <TextView
+        android:id="@+id/usd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/usd"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/baseCurrency" />
+
+    <TextView
+        android:id="@+id/eur"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/eur"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/usd" />
+
+    <TextView
+        android:id="@+id/jpy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/jpy"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/eur" />
+
+    <TextView
+        android:id="@+id/gbp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/gbp"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/jpy" />
+
+    <TextView
+        android:id="@+id/aud"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/aud"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/gbp" />
+
+    <TextView
+        android:id="@+id/cad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cad"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/aud" />
+
+    <TextView
+        android:id="@+id/chf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/chf"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cad" />
+
+    <TextView
+        android:id="@+id/cny"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cny"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/chf" />
+
+    <TextView
+        android:id="@+id/nzd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/nzd"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cny" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

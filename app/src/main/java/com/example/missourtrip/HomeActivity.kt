@@ -5,10 +5,14 @@ import android.os.Bundle
 import android.view.View
 import kotlinx.android.synthetic.main.activity_home.*
 import android.content.Intent
+import android.widget.Button
 import java.io.File
 
 
 class HomeActivity : AppCompatActivity() {
+
+    private lateinit var btnExchangeRate: Button
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)
@@ -16,7 +20,11 @@ class HomeActivity : AppCompatActivity() {
         val path = filesDir
         val saved_password = File(path, "password.txt")
 
+        btnExchangeRate = findViewById(R.id.to_exchange_rates_btn)
 
+        btnExchangeRate.setOnClickListener{
+            startActivity(Intent(this, RateActivity::class.java))
+        }
     }
 
     fun toResetPassword(view: View){
@@ -31,8 +39,10 @@ class HomeActivity : AppCompatActivity() {
         startActivity(categoriesIntent)
     }
 
-    fun toExpenses(view: View){
-        val expensesIntent = Intent(this, ExpenseActivity::class.java).apply {  }
-        startActivity(expensesIntent)
+    fun toExpense(view: View){
+        val expenseIntent = Intent(this, ExpenseActivity::class.java).apply {  }
+        startActivity(expenseIntent)
     }
+
+
 }

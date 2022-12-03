@@ -101,7 +101,7 @@
                     android:autofillHints="" />
 
                 <TextView
-                    android:id="@+id/my_amount"
+                    android:id="@+id/others_amount"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"

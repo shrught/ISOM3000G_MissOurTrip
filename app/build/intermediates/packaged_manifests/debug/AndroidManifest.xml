@@ -8,6 +8,8 @@
         android:minSdkVersion="27"
         android:targetSdkVersion="32" />
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -21,6 +23,14 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/Theme.MissOurTrip" >
+        <activity
+            android:name="com.example.missourtrip.RateActivity"
+            android:exported="false"
+            android:parentActivityName="com.example.missourtrip.HomeActivity" >
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
         <activity
             android:name="com.example.missourtrip.AddExpenseActivity"
             android:exported="false" >
