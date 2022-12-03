@@ -20,6 +20,7 @@
     <string name="date">Date:</string>
     <string name="desciption">Desciption:</string>
     <string name="enter_password">Enter Password</string>
+    <string name="exchange_rates">Exchange Rates</string>
     <string name="existing_password_reminder">You have already signed up before! Please login!</string>
     <string name="expenses">Expenses</string>
     <string name="export">Export</string>
@@ -41,6 +42,7 @@
     <string name="signup">signup</string>
     <string name="split">split</string>
     <string name="splitting_bill">Splitting bill</string>
+    <string name="statictics">Statictics</string>
     <string name="total">Total:</string>
     <string name="welcome_back_to_missourtrip">Welcome back to MissOurTrip!</string>
     <style name="Theme.MissOurTrip" parent="Theme.MaterialComponents.DayNight.DarkActionBar">

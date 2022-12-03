@@ -11,8 +11,6 @@ import androidx.recyclerview.widget.RecyclerView
 import androidx.room.Room
 import com.google.android.material.snackbar.Snackbar
 import kotlinx.android.synthetic.main.activity_category_main.*
-import kotlinx.android.synthetic.main.activity_expense_main.*
-import kotlinx.android.synthetic.main.activity_expense_main.recycleView
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
@@ -24,7 +22,7 @@ class CategoryActivity : AppCompatActivity() {
     private lateinit var categories: List<Category>
     private lateinit var oldCategories: List<Category>
     private lateinit var categoryAdapter: CategoryAdapter
-    private lateinit var linearLayoutManager: LinearLayoutManager
+    private lateinit var linearLayoutManager_cat: LinearLayoutManager
     private lateinit var db: AppDatabase
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -34,15 +32,16 @@ class CategoryActivity : AppCompatActivity() {
         categories = arrayListOf()
 
         categoryAdapter = CategoryAdapter(categories)
-        linearLayoutManager = LinearLayoutManager(this)
+        linearLayoutManager_cat = LinearLayoutManager(this)
 
         db = Room.databaseBuilder(this,
         AppDatabase::class.java,
-        "categories").build()
+        "categories").fallbackToDestructiveMigration().build()
 
-        recycleView.apply {
+
+        recycleView_cat.apply {
             adapter = categoryAdapter
-            layoutManager = linearLayoutManager
+            layoutManager = linearLayoutManager_cat
         }
 
         //swipe to remove
@@ -61,7 +60,7 @@ class CategoryActivity : AppCompatActivity() {
         }
 
         val swipeHelper = ItemTouchHelper(itemTouchHelper)
-        swipeHelper.attachToRecyclerView(recycleView)
+        swipeHelper.attachToRecyclerView(recycleView_cat)
 
 
         cate_add_btn.setOnClickListener {

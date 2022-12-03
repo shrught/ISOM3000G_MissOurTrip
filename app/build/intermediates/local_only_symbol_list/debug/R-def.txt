@@ -9,6 +9,7 @@ color teal_700
 color white
 drawable ic_launcher_background
 drawable ic_launcher_foreground
+id Statistics
 id add_btn
 id add_parti_btn
 id amount
@@ -29,7 +30,7 @@ id exp_name
 id exp_name3
 id exp_save_btn
 id export_btn
-id home_text
+id home_title
 id login
 id login_description
 id login_password
@@ -38,7 +39,8 @@ id my_amount
 id name
 id new_password
 id new_password_description
-id recycleView
+id recycleView_cat
+id recycleView_exp
 id reset_password_title
 id scrollView3
 id signup_btn
@@ -61,6 +63,9 @@ id textView5
 id textView6
 id textView7
 id textView8
+id to_category_btn
+id to_exchange_rates_btn
+id to_expense_btn
 id to_login_page
 id to_set_password
 id warningAddCate
@@ -91,6 +96,7 @@ string create_account
 string date
 string desciption
 string enter_password
+string exchange_rates
 string existing_password_reminder
 string expenses
 string export
@@ -112,6 +118,7 @@ string sign_up_with_a_new_password
 string signup
 string split
 string splitting_bill
+string statictics
 string total
 string welcome_back_to_missourtrip
 style Theme.MissOurTrip

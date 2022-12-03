@@ -2651,6 +2651,7 @@ id SHOW_ALL
 id SHOW_PATH
 id SHOW_PROGRESS
 id SYM
+id Statistics
 id TOP_END
 id TOP_START
 id accelerate
@@ -2869,7 +2870,7 @@ id header_title
 id hideable
 id home
 id homeAsUp
-id home_text
+id home_title
 id honorRequest
 id horizontal_only
 id icon
@@ -3007,7 +3008,8 @@ id progress_horizontal
 id radio
 id ratio
 id rectangles
-id recycleView
+id recycleView_cat
+id recycleView_exp
 id reset_password_title
 id reverseSawtooth
 id right
@@ -3132,6 +3134,9 @@ id time
 id title
 id titleDividerNoCustom
 id title_template
+id to_category_btn
+id to_exchange_rates_btn
+id to_expense_btn
 id to_login_page
 id to_set_password
 id toggle
@@ -3435,6 +3440,7 @@ string desciption
 string enter_password
 string error_a11y_label
 string error_icon_content_description
+string exchange_rates
 string existing_password_reminder
 string expenses
 string export
@@ -3555,6 +3561,7 @@ string sign_up_with_a_new_password
 string signup
 string split
 string splitting_bill
+string statictics
 string status_bar_notification_info_overflow
 string total
 string welcome_back_to_missourtrip

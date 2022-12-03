@@ -11,7 +11,7 @@
 9-->C:\Users\user\Documents\GitHub\ISOM3000G_MissOurTrip\app\src\main\AndroidManifest.xml
 10
 11    <application
-11-->C:\Users\user\Documents\GitHub\ISOM3000G_MissOurTrip\app\src\main\AndroidManifest.xml:6:5-25:19
+11-->C:\Users\user\Documents\GitHub\ISOM3000G_MissOurTrip\app\src\main\AndroidManifest.xml:6:5-72:19
 12        android:allowBackup="true"
 12-->C:\Users\user\Documents\GitHub\ISOM3000G_MissOurTrip\app\src\main\AndroidManifest.xml:7:9-35
 13        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -33,57 +33,140 @@
 22        android:testOnly="true"
 23        android:theme="@style/Theme.MissOurTrip" >
 23-->C:\Users\user\Documents\GitHub\ISOM3000G_MissOurTrip\app\src\main\AndroidManifest.xml:14:9-49
-24        <activity android:name="com.example.missourtrip.AddCategoryActivity" />
-24-->C:\Users\user\Documents\GitHub\ISOM3000G_MissOurTrip\app\src\main\AndroidManifest.xml:15:9-66
-24-->C:\Users\user\Documents\GitHub\ISOM3000G_MissOurTrip\app\src\main\AndroidManifest.xml:15:19-54
-25        <activity
-25-->C:\Users\user\Documents\GitHub\ISOM3000G_MissOurTrip\app\src\main\AndroidManifest.xml:16:9-24:20
-26            android:name="com.example.missourtrip.CategoryActivity"
-26-->C:\Users\user\Documents\GitHub\ISOM3000G_MissOurTrip\app\src\main\AndroidManifest.xml:17:13-45
-27            android:exported="true" >
-27-->C:\Users\user\Documents\GitHub\ISOM3000G_MissOurTrip\app\src\main\AndroidManifest.xml:18:13-36
-28            <intent-filter>
-28-->C:\Users\user\Documents\GitHub\ISOM3000G_MissOurTrip\app\src\main\AndroidManifest.xml:19:13-23:29
-29                <action android:name="android.intent.action.MAIN" />
-29-->C:\Users\user\Documents\GitHub\ISOM3000G_MissOurTrip\app\src\main\AndroidManifest.xml:20:17-68
-29-->C:\Users\user\Documents\GitHub\ISOM3000G_MissOurTrip\app\src\main\AndroidManifest.xml:20:25-66
-30
-31                <category android:name="android.intent.category.LAUNCHER" />
-31-->C:\Users\user\Documents\GitHub\ISOM3000G_MissOurTrip\app\src\main\AndroidManifest.xml:22:17-77
-31-->C:\Users\user\Documents\GitHub\ISOM3000G_MissOurTrip\app\src\main\AndroidManifest.xml:22:27-74
-32            </intent-filter>
-33        </activity>
-34
-35        <service
-35-->[androidx.room:room-runtime:2.2.6] C:\Users\user\.gradle\caches\transforms-3\d2f8961845feec6710c92a1b93e4f6f7\transformed\room-runtime-2.2.6\AndroidManifest.xml:25:9-28:40
-36            android:name="androidx.room.MultiInstanceInvalidationService"
-36-->[androidx.room:room-runtime:2.2.6] C:\Users\user\.gradle\caches\transforms-3\d2f8961845feec6710c92a1b93e4f6f7\transformed\room-runtime-2.2.6\AndroidManifest.xml:26:13-74
-37            android:directBootAware="true"
-37-->[androidx.room:room-runtime:2.2.6] C:\Users\user\.gradle\caches\transforms-3\d2f8961845feec6710c92a1b93e4f6f7\transformed\room-runtime-2.2.6\AndroidManifest.xml:27:13-43
-38            android:exported="false" />
-38-->[androidx.room:room-runtime:2.2.6] C:\Users\user\.gradle\caches\transforms-3\d2f8961845feec6710c92a1b93e4f6f7\transformed\room-runtime-2.2.6\AndroidManifest.xml:28:13-37
-39
-40        <provider
-40-->[androidx.emoji2:emoji2:1.2.0] C:\Users\user\.gradle\caches\transforms-3\8646fc24a05f0f3fb603801ddeb6af39\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
-41            android:name="androidx.startup.InitializationProvider"
-41-->[androidx.emoji2:emoji2:1.2.0] C:\Users\user\.gradle\caches\transforms-3\8646fc24a05f0f3fb603801ddeb6af39\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
-42            android:authorities="com.example.missourtrip.androidx-startup"
-42-->[androidx.emoji2:emoji2:1.2.0] C:\Users\user\.gradle\caches\transforms-3\8646fc24a05f0f3fb603801ddeb6af39\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
-43            android:exported="false" >
-43-->[androidx.emoji2:emoji2:1.2.0] C:\Users\user\.gradle\caches\transforms-3\8646fc24a05f0f3fb603801ddeb6af39\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
-44            <meta-data
-44-->[androidx.emoji2:emoji2:1.2.0] C:\Users\user\.gradle\caches\transforms-3\8646fc24a05f0f3fb603801ddeb6af39\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
-45                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-45-->[androidx.emoji2:emoji2:1.2.0] C:\Users\user\.gradle\caches\transforms-3\8646fc24a05f0f3fb603801ddeb6af39\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
-46                android:value="androidx.startup" />
-46-->[androidx.emoji2:emoji2:1.2.0] C:\Users\user\.gradle\caches\transforms-3\8646fc24a05f0f3fb603801ddeb6af39\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
-47            <meta-data
-47-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\user\.gradle\caches\transforms-3\a12ed9220754cce2dddf3ed6d58bf3a3\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
-48                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-48-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\user\.gradle\caches\transforms-3\a12ed9220754cce2dddf3ed6d58bf3a3\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
-49                android:value="androidx.startup" />
-49-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\user\.gradle\caches\transforms-3\a12ed9220754cce2dddf3ed6d58bf3a3\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
-50        </provider>
-51    </application>
-52
-53</manifest>
+24        <activity
+24-->C:\Users\user\Documents\GitHub\ISOM3000G_MissOurTrip\app\src\main\AndroidManifest.xml:16:9-22:20
+25            android:name="com.example.missourtrip.AddExpenseActivity"
+25-->C:\Users\user\Documents\GitHub\ISOM3000G_MissOurTrip\app\src\main\AndroidManifest.xml:17:13-47
+26            android:exported="false" >
+26-->C:\Users\user\Documents\GitHub\ISOM3000G_MissOurTrip\app\src\main\AndroidManifest.xml:18:13-37
+27            <meta-data
+27-->C:\Users\user\Documents\GitHub\ISOM3000G_MissOurTrip\app\src\main\AndroidManifest.xml:19:13-21:36
+28                android:name="android.app.lib_name"
+28-->C:\Users\user\Documents\GitHub\ISOM3000G_MissOurTrip\app\src\main\AndroidManifest.xml:20:17-52
+29                android:value="" />
+29-->C:\Users\user\Documents\GitHub\ISOM3000G_MissOurTrip\app\src\main\AndroidManifest.xml:21:17-33
+30        </activity>
+31        <activity
+31-->C:\Users\user\Documents\GitHub\ISOM3000G_MissOurTrip\app\src\main\AndroidManifest.xml:23:9-29:20
+32            android:name="com.example.missourtrip.ExpenseActivity"
+32-->C:\Users\user\Documents\GitHub\ISOM3000G_MissOurTrip\app\src\main\AndroidManifest.xml:24:13-44
+33            android:exported="false" >
+33-->C:\Users\user\Documents\GitHub\ISOM3000G_MissOurTrip\app\src\main\AndroidManifest.xml:25:13-37
+34            <meta-data
+34-->C:\Users\user\Documents\GitHub\ISOM3000G_MissOurTrip\app\src\main\AndroidManifest.xml:19:13-21:36
+35                android:name="android.app.lib_name"
+35-->C:\Users\user\Documents\GitHub\ISOM3000G_MissOurTrip\app\src\main\AndroidManifest.xml:20:17-52
+36                android:value="" />
+36-->C:\Users\user\Documents\GitHub\ISOM3000G_MissOurTrip\app\src\main\AndroidManifest.xml:21:17-33
+37        </activity>
+38        <activity
+38-->C:\Users\user\Documents\GitHub\ISOM3000G_MissOurTrip\app\src\main\AndroidManifest.xml:30:9-36:20
+39            android:name="com.example.missourtrip.AddCategoryActivity"
+39-->C:\Users\user\Documents\GitHub\ISOM3000G_MissOurTrip\app\src\main\AndroidManifest.xml:31:13-48
+40            android:exported="false" >
+40-->C:\Users\user\Documents\GitHub\ISOM3000G_MissOurTrip\app\src\main\AndroidManifest.xml:32:13-37
+41            <meta-data
+41-->C:\Users\user\Documents\GitHub\ISOM3000G_MissOurTrip\app\src\main\AndroidManifest.xml:19:13-21:36
+42                android:name="android.app.lib_name"
+42-->C:\Users\user\Documents\GitHub\ISOM3000G_MissOurTrip\app\src\main\AndroidManifest.xml:20:17-52
+43                android:value="" />
+43-->C:\Users\user\Documents\GitHub\ISOM3000G_MissOurTrip\app\src\main\AndroidManifest.xml:21:17-33
+44        </activity>
+45        <activity
+45-->C:\Users\user\Documents\GitHub\ISOM3000G_MissOurTrip\app\src\main\AndroidManifest.xml:37:9-43:20
+46            android:name="com.example.missourtrip.CategoryActivity"
+46-->C:\Users\user\Documents\GitHub\ISOM3000G_MissOurTrip\app\src\main\AndroidManifest.xml:38:13-45
+47            android:exported="false" >
+47-->C:\Users\user\Documents\GitHub\ISOM3000G_MissOurTrip\app\src\main\AndroidManifest.xml:39:13-37
+48            <meta-data
+48-->C:\Users\user\Documents\GitHub\ISOM3000G_MissOurTrip\app\src\main\AndroidManifest.xml:19:13-21:36
+49                android:name="android.app.lib_name"
+49-->C:\Users\user\Documents\GitHub\ISOM3000G_MissOurTrip\app\src\main\AndroidManifest.xml:20:17-52
+50                android:value="" />
+50-->C:\Users\user\Documents\GitHub\ISOM3000G_MissOurTrip\app\src\main\AndroidManifest.xml:21:17-33
+51        </activity>
+52        <activity
+52-->C:\Users\user\Documents\GitHub\ISOM3000G_MissOurTrip\app\src\main\AndroidManifest.xml:44:9-51:20
+53            android:name="com.example.missourtrip.ResetPasswordActivity"
+53-->C:\Users\user\Documents\GitHub\ISOM3000G_MissOurTrip\app\src\main\AndroidManifest.xml:45:13-50
+54            android:parentActivityName="com.example.missourtrip.HomeActivity" >
+54-->C:\Users\user\Documents\GitHub\ISOM3000G_MissOurTrip\app\src\main\AndroidManifest.xml:46:13-55
+55            <meta-data
+55-->C:\Users\user\Documents\GitHub\ISOM3000G_MissOurTrip\app\src\main\AndroidManifest.xml:47:13-49:49
+56                android:name="android.support.PARENT_ACTIVITY"
+56-->C:\Users\user\Documents\GitHub\ISOM3000G_MissOurTrip\app\src\main\AndroidManifest.xml:48:17-63
+57                android:value=".HomeActivity" />
+57-->C:\Users\user\Documents\GitHub\ISOM3000G_MissOurTrip\app\src\main\AndroidManifest.xml:49:17-46
+58            android:exported="false" >
+59        </activity>
+60        <activity
+60-->C:\Users\user\Documents\GitHub\ISOM3000G_MissOurTrip\app\src\main\AndroidManifest.xml:52:9-54:40
+61            android:name="com.example.missourtrip.HomeActivity"
+61-->C:\Users\user\Documents\GitHub\ISOM3000G_MissOurTrip\app\src\main\AndroidManifest.xml:53:13-41
+62            android:exported="false" />
+62-->C:\Users\user\Documents\GitHub\ISOM3000G_MissOurTrip\app\src\main\AndroidManifest.xml:54:13-37
+63        <activity
+63-->C:\Users\user\Documents\GitHub\ISOM3000G_MissOurTrip\app\src\main\AndroidManifest.xml:55:9-62:20
+64            android:name="com.example.missourtrip.LoginActivity"
+64-->C:\Users\user\Documents\GitHub\ISOM3000G_MissOurTrip\app\src\main\AndroidManifest.xml:56:13-42
+65            android:parentActivityName="com.example.missourtrip.MainActivity" >
+65-->C:\Users\user\Documents\GitHub\ISOM3000G_MissOurTrip\app\src\main\AndroidManifest.xml:57:13-55
+66            <meta-data
+66-->C:\Users\user\Documents\GitHub\ISOM3000G_MissOurTrip\app\src\main\AndroidManifest.xml:47:13-49:49
+67                android:name="android.support.PARENT_ACTIVITY"
+67-->C:\Users\user\Documents\GitHub\ISOM3000G_MissOurTrip\app\src\main\AndroidManifest.xml:48:17-63
+68                android:value=".MainActivity" />
+68-->C:\Users\user\Documents\GitHub\ISOM3000G_MissOurTrip\app\src\main\AndroidManifest.xml:49:17-46
+69            android:exported="true" >
+70        </activity>
+71        <activity
+71-->C:\Users\user\Documents\GitHub\ISOM3000G_MissOurTrip\app\src\main\AndroidManifest.xml:63:9-71:20
+72            android:name="com.example.missourtrip.MainActivity"
+72-->C:\Users\user\Documents\GitHub\ISOM3000G_MissOurTrip\app\src\main\AndroidManifest.xml:64:13-41
+73            android:exported="true" >
+73-->C:\Users\user\Documents\GitHub\ISOM3000G_MissOurTrip\app\src\main\AndroidManifest.xml:65:13-36
+74            <intent-filter>
+74-->C:\Users\user\Documents\GitHub\ISOM3000G_MissOurTrip\app\src\main\AndroidManifest.xml:66:13-70:29
+75                <action android:name="android.intent.action.MAIN" />
+75-->C:\Users\user\Documents\GitHub\ISOM3000G_MissOurTrip\app\src\main\AndroidManifest.xml:67:17-69
+75-->C:\Users\user\Documents\GitHub\ISOM3000G_MissOurTrip\app\src\main\AndroidManifest.xml:67:25-66
+76
+77                <category android:name="android.intent.category.LAUNCHER" />
+77-->C:\Users\user\Documents\GitHub\ISOM3000G_MissOurTrip\app\src\main\AndroidManifest.xml:69:17-77
+77-->C:\Users\user\Documents\GitHub\ISOM3000G_MissOurTrip\app\src\main\AndroidManifest.xml:69:27-74
+78            </intent-filter>
+79        </activity>
+80
+81        <service
+81-->[androidx.room:room-runtime:2.2.6] C:\Users\user\.gradle\caches\transforms-3\d2f8961845feec6710c92a1b93e4f6f7\transformed\room-runtime-2.2.6\AndroidManifest.xml:25:9-28:40
+82            android:name="androidx.room.MultiInstanceInvalidationService"
+82-->[androidx.room:room-runtime:2.2.6] C:\Users\user\.gradle\caches\transforms-3\d2f8961845feec6710c92a1b93e4f6f7\transformed\room-runtime-2.2.6\AndroidManifest.xml:26:13-74
+83            android:directBootAware="true"
+83-->[androidx.room:room-runtime:2.2.6] C:\Users\user\.gradle\caches\transforms-3\d2f8961845feec6710c92a1b93e4f6f7\transformed\room-runtime-2.2.6\AndroidManifest.xml:27:13-43
+84            android:exported="false" />
+84-->[androidx.room:room-runtime:2.2.6] C:\Users\user\.gradle\caches\transforms-3\d2f8961845feec6710c92a1b93e4f6f7\transformed\room-runtime-2.2.6\AndroidManifest.xml:28:13-37
+85
+86        <provider
+86-->[androidx.emoji2:emoji2:1.2.0] C:\Users\user\.gradle\caches\transforms-3\8646fc24a05f0f3fb603801ddeb6af39\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+87            android:name="androidx.startup.InitializationProvider"
+87-->[androidx.emoji2:emoji2:1.2.0] C:\Users\user\.gradle\caches\transforms-3\8646fc24a05f0f3fb603801ddeb6af39\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
+88            android:authorities="com.example.missourtrip.androidx-startup"
+88-->[androidx.emoji2:emoji2:1.2.0] C:\Users\user\.gradle\caches\transforms-3\8646fc24a05f0f3fb603801ddeb6af39\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
+89            android:exported="false" >
+89-->[androidx.emoji2:emoji2:1.2.0] C:\Users\user\.gradle\caches\transforms-3\8646fc24a05f0f3fb603801ddeb6af39\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
+90            <meta-data
+90-->[androidx.emoji2:emoji2:1.2.0] C:\Users\user\.gradle\caches\transforms-3\8646fc24a05f0f3fb603801ddeb6af39\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+91                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+91-->[androidx.emoji2:emoji2:1.2.0] C:\Users\user\.gradle\caches\transforms-3\8646fc24a05f0f3fb603801ddeb6af39\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
+92                android:value="androidx.startup" />
+92-->[androidx.emoji2:emoji2:1.2.0] C:\Users\user\.gradle\caches\transforms-3\8646fc24a05f0f3fb603801ddeb6af39\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
+93            <meta-data
+93-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\user\.gradle\caches\transforms-3\a12ed9220754cce2dddf3ed6d58bf3a3\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
+94                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+94-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\user\.gradle\caches\transforms-3\a12ed9220754cce2dddf3ed6d58bf3a3\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
+95                android:value="androidx.startup" />
+95-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\user\.gradle\caches\transforms-3\a12ed9220754cce2dddf3ed6d58bf3a3\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
+96        </provider>
+97    </application>
+98
+99</manifest>

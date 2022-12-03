@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.view.View
 import kotlinx.android.synthetic.main.activity_login.*
 import android.content.Intent
+import android.widget.Toast
 import com.google.android.material.snackbar.Snackbar
 import java.io.File
 
@@ -28,8 +29,7 @@ class LoginActivity : AppCompatActivity() {
             startActivity(intent)
         }
         else{
-            val reminder = Snackbar.make(view, "Wrong Password!!", Snackbar.LENGTH_SHORT)
-            reminder.show();
+            Toast.makeText(this, "Wrong Password!!", Toast.LENGTH_SHORT).show()
         }
 
     }

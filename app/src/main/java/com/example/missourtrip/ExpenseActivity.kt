@@ -21,7 +21,7 @@ class ExpenseActivity : AppCompatActivity() {
     private lateinit var expenses: List<Expense>
     private lateinit var oldExpenses: List<Expense>
     private lateinit var expenseAdapter: ExpenseAdapter
-    private lateinit var linearLayoutManager: LinearLayoutManager
+    private lateinit var linearLayoutManager_exp: LinearLayoutManager
     private lateinit var db: AppDatabase
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -31,15 +31,13 @@ class ExpenseActivity : AppCompatActivity() {
         expenses = arrayListOf()
 
         expenseAdapter = ExpenseAdapter(expenses)
-        linearLayoutManager = LinearLayoutManager(this)
-
+        linearLayoutManager_exp = LinearLayoutManager(this)
         db = Room.databaseBuilder(this,
             AppDatabase::class.java,
-            "expenses").build()
-
-        recycleView.apply {
+            "expenses").fallbackToDestructiveMigration().build()
+        recycleView_exp.apply {
             adapter = expenseAdapter
-            layoutManager = linearLayoutManager
+            layoutManager = linearLayoutManager_exp
         }
 
         //swipe to remove
@@ -59,7 +57,8 @@ class ExpenseActivity : AppCompatActivity() {
         }
 
         val swipeHelper = ItemTouchHelper(itemTouchHelper)
-        swipeHelper.attachToRecyclerView(recycleView)
+        swipeHelper.attachToRecyclerView(recycleView_exp)
+
 
         add_btn.setOnClickListener {
             val intent = Intent(this, AddExpenseActivity::class.java)

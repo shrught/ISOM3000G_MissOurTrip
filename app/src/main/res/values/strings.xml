@@ -35,4 +35,7 @@
     <string name="new_category">New Category</string>
     <string name="desciption">Desciption:</string>
     <string name="cancel">cancel</string>
+    <string name="statictics">Statictics</string>
+    <string name="exchange_rates">Exchange Rates</string>
+
 </resources>
