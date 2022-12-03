@@ -62,7 +62,7 @@
         android:layout_width="wrap_content"
         android:layout_height="60dp"
         android:layout_marginBottom="580dp"
-        android:onClick="toExpenses"
+        android:onClick="toExpense"
         android:text="@string/expenses"
         android:textColor="#000000"
         app:backgroundTint="@color/teal_700"
