@@ -37,5 +37,17 @@
     <string name="cancel">cancel</string>
     <string name="statictics">Statictics</string>
     <string name="exchange_rates">Exchange Rates</string>
+    <string name="base_currency">HKD: 1.00</string>
+    <string name="usd">USD:</string>
+    <string name="eur">EUR:</string>
+    <string name="jpy">JPY:</string>
+    <string name="gbp">GBP:</string>
+    <string name="aud">AUD:</string>
+    <string name="cad">CAD:</string>
+    <string name="chf">CHF:</string>
+    <string name="cny">CNY:</string>
+    <string name="nzd">NZD:</string>
+    <string name="last_updated">Last Updated</string>
+    <string name="exchange_rate">Exchange Rate</string>
 
 </resources>
