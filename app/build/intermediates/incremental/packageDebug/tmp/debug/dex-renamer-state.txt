@@ -1,4 +1,4 @@
-#Sun Dec 04 04:41:56 HKT 2022
+#Sun Dec 04 22:29:24 HKT 2022
 base.2=/Users/lky.iris/Documents/GitHub/ISOM3000G_MissOurTrip/app/build/intermediates/dex/debug/mergeProjectDexDebug/7/classes.dex
 path.2=7/classes.dex
 base.1=/Users/lky.iris/Documents/GitHub/ISOM3000G_MissOurTrip/app/build/intermediates/dex/debug/mergeProjectDexDebug/0/classes.dex

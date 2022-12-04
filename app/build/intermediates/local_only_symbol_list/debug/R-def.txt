@@ -13,6 +13,8 @@ id Statistics
 id add_btn
 id add_parti_btn
 id amount
+id amount1
+id amount_me
 id apply_btn
 id aud
 id baseCurrency
@@ -22,6 +24,7 @@ id cate_cancel_btn
 id cate_desc
 id cate_name
 id cate_save_btn
+id checkBox
 id chf
 id cny
 id current_password
@@ -40,16 +43,15 @@ id gbp
 id home_title
 id jpy
 id lastUpdated
+id linear
 id login
 id login_description
 id login_password
 id login_title
-id my_amount
 id name
 id new_password
 id new_password_description
 id nzd
-id others_amount
 id recycleView_cat
 id recycleView_exp
 id reset_password_title
@@ -83,6 +85,7 @@ id to_set_password
 id usd
 id warningAddCate
 id warningAddExp
+id warningAddExp3
 layout activity_category_add
 layout activity_category_main
 layout activity_expense_add
@@ -123,6 +126,7 @@ string expenses
 string export
 string friend_1
 string gbp
+string has_the_expense_settled
 string home
 string jpy
 string last_updated
@@ -139,6 +143,7 @@ string please_enter_current_password
 string reset_password
 string reset_password_title
 string save
+string settled
 string sign_up_with_a_new_password
 string signup
 string split

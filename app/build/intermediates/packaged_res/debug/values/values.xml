@@ -33,6 +33,7 @@
     <string name="export">Export</string>
     <string name="friend_1">Friend 1</string>
     <string name="gbp">GBP:</string>
+    <string name="has_the_expense_settled">Has the expense settled?</string>
     <string name="home">Home</string>
     <string name="jpy">JPY:</string>
     <string name="last_updated">Last Updated</string>
@@ -49,6 +50,7 @@
     <string name="reset_password"><u>Reset Password?</u></string>
     <string name="reset_password_title">Reset Password</string>
     <string name="save">save</string>
+    <string name="settled">Settled</string>
     <string name="sign_up_with_a_new_password">Sign up with a new password</string>
     <string name="signup">signup</string>
     <string name="split">split</string>

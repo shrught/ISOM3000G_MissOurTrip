@@ -49,6 +49,8 @@
     <string name="nzd">NZD:</string>
     <string name="last_updated">Last Updated</string>
     <string name="exchange_rate">Exchange Rate</string>
+    <string name="has_the_expense_settled">Has the expense settled?</string>
+    <string name="settled">Settled</string>
 
 
 </resources>

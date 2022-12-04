@@ -1,6 +1,7 @@
 package com.example.missourtrip
 
 import android.content.Context
+import android.content.Intent
 import android.icu.text.SimpleDateFormat
 import android.os.Bundle
 import android.view.Gravity
@@ -31,15 +32,9 @@ class AddExpenseActivity : AppCompatActivity(), AdapterView.OnItemSelectedListen
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_expense_add)
-//
-//        var exp_date = TextView.AUTOFILL_TYPE_DATE(this)
-//        exp_date.text = LocalDate.now()
+
         val dateView = findViewById<View>(R.id.exp_date) as TextView
         setDate(dateView)
-//        var calendar = Calendar.getInstance();
-//        val dateFormat = SimpleDateFormat("MM/dd/yyyy");
-//        var date = dateFormat.parse(calendar.getTime().toString())
-//        dateTimeDisplay.text(date)!!
 
         db = Room.databaseBuilder(this,
             AppDatabase::class.java,
@@ -108,7 +103,6 @@ class AddExpenseActivity : AppCompatActivity(), AdapterView.OnItemSelectedListen
                 warningAddExp.text = "Please enter a valid amount"
             }
             else if (checkDate(date) == false){
-                println("111111111111")
                 warningAddExp.text = "Please enter date in format - dd/mm/yyyy"
             }
             else if (category == null){
@@ -116,9 +110,59 @@ class AddExpenseActivity : AppCompatActivity(), AdapterView.OnItemSelectedListen
             }
 
             else{
-                val expense = Expense(0, name, amount,currency, date, category, split = false  )
+                val expense = Expense(0, name, amount,currency, date, category, 1 , "",false)
                 insert(expense)
             }
+
+        }
+
+        split_btn.setOnClickListener{
+            val name = exp_name.text.toString()
+            val amount = exp_amount.text.toString().toDoubleOrNull()
+            val date = exp_date.text.toString()
+            val category = exp_category.getSelectedItem().toString()
+            val currency = exp_currency.getSelectedItem().toString()
+
+            exp_name.addTextChangedListener {
+                if(it!!.count() > 0){
+                    warningAddExp.text = ""
+                }
+            }
+            exp_amount.addTextChangedListener {
+                if(it!!.count() > 0){
+                    warningAddExp.text = ""
+                }
+            }
+            if (name.isEmpty()){
+                warningAddExp.text = "Please enter a valid name"
+            }
+            else if (amount == null){
+                warningAddExp.text = "Please enter a valid amount"
+            }
+            else if (currency == null){
+                warningAddExp.text = "Please enter a valid amount"
+            }
+            else if (date == null){
+                warningAddExp.text = "Please enter a valid amount"
+            }
+            else if (checkDate(date) == false){
+                warningAddExp.text = "Please enter date in format - dd/mm/yyyy"
+            }
+            else if (category == null){
+                warningAddExp.text = "Please enter a valid amount"
+            }
+
+            else{
+                val intent = Intent(this, ExpenseSplitActivity::class.java).apply {
+                    putExtra("name", name);
+                    putExtra("amount", amount.toString());
+                    putExtra("currency", currency);
+                    putExtra("date", date);
+                    putExtra("category", category);
+                }
+                startActivity(intent)
+            }
+
         }
 
     }

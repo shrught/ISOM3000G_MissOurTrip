@@ -2719,6 +2719,8 @@ id all
 id allStates
 id always
 id amount
+id amount1
+id amount_me
 id animateToEnd
 id animateToStart
 id antiClockwise
@@ -2763,6 +2765,7 @@ id center_vertical
 id chain
 id chain2
 id chains
+id checkBox
 id checkbox
 id checked
 id chf
@@ -2969,7 +2972,6 @@ id mtrl_picker_text_input_range_start
 id mtrl_picker_title_text
 id mtrl_view_tag_bottom_padding
 id multiply
-id my_amount
 id name
 id navigation_bar_item_active_indicator_view
 id navigation_bar_item_icon_container
@@ -2995,7 +2997,6 @@ id nzd
 id off
 id on
 id onInterceptTouchReturnSwipe
-id others_amount
 id outline
 id outward
 id overshoot
@@ -3179,6 +3180,7 @@ id visible
 id visible_removing_fragment_view_tag
 id warningAddCate
 id warningAddExp
+id warningAddExp3
 id west
 id withText
 id with_icon
@@ -3469,6 +3471,7 @@ string fab_transformation_scrim_behavior
 string fab_transformation_sheet_behavior
 string friend_1
 string gbp
+string has_the_expense_settled
 string hide_bottom_view_on_scroll_behavior
 string home
 string icon_content_description
@@ -3581,6 +3584,7 @@ string reset_password
 string reset_password_title
 string save
 string search_menu_title
+string settled
 string sign_up_with_a_new_password
 string signup
 string split

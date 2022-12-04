@@ -6,12 +6,17 @@ import android.view.View
 import kotlinx.android.synthetic.main.activity_home.*
 import android.content.Intent
 import android.widget.Button
+import androidx.room.Room
+import kotlinx.coroutines.GlobalScope
+import kotlinx.coroutines.launch
 import java.io.File
 
 
 class HomeActivity : AppCompatActivity() {
 
     private lateinit var btnExchangeRate: Button
+    private lateinit var db: AppDatabase
+    private lateinit var catList: List<String>
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -24,6 +29,19 @@ class HomeActivity : AppCompatActivity() {
 
         btnExchangeRate.setOnClickListener{
             startActivity(Intent(this, RateActivity::class.java))
+        }
+
+        db = Room.databaseBuilder(this,
+            AppDatabase::class.java,
+            "categories").allowMainThreadQueries().build()
+
+        catList = db.categoryDao().getName()
+
+        println(catList + "111111111111")
+
+        if (catList == null){
+            val category = Category( "Food", "Food")
+            insert(category)
         }
     }
 
@@ -44,5 +62,15 @@ class HomeActivity : AppCompatActivity() {
         startActivity(expenseIntent)
     }
 
+    private fun insert(category: Category){
+        val db = Room.databaseBuilder(this,
+            AppDatabase::class.java,
+            "categories").build()
+
+        GlobalScope.launch {
+            db.categoryDao().insertAll(category)
+            finish()
+        }
+    }
 
 }

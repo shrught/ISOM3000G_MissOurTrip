@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/lky.iris/Documents/GitHub/ISOM3000G_MissOurTrip/app/src/main/AndroidManifest.xml:2:1-84:12
-INJECTED from /Users/lky.iris/Documents/GitHub/ISOM3000G_MissOurTrip/app/src/main/AndroidManifest.xml:2:1-84:12
-INJECTED from /Users/lky.iris/Documents/GitHub/ISOM3000G_MissOurTrip/app/src/main/AndroidManifest.xml:2:1-84:12
-INJECTED from /Users/lky.iris/Documents/GitHub/ISOM3000G_MissOurTrip/app/src/main/AndroidManifest.xml:2:1-84:12
+ADDED from /Users/lky.iris/Documents/GitHub/ISOM3000G_MissOurTrip/app/src/main/AndroidManifest.xml:2:1-94:12
+INJECTED from /Users/lky.iris/Documents/GitHub/ISOM3000G_MissOurTrip/app/src/main/AndroidManifest.xml:2:1-94:12
+INJECTED from /Users/lky.iris/Documents/GitHub/ISOM3000G_MissOurTrip/app/src/main/AndroidManifest.xml:2:1-94:12
+INJECTED from /Users/lky.iris/Documents/GitHub/ISOM3000G_MissOurTrip/app/src/main/AndroidManifest.xml:2:1-94:12
 MERGED from [androidx.databinding:viewbinding:7.2.2] /Users/lky.iris/.gradle/caches/transforms-3/9b5459529d0a0e47eec94b76921d5907/transformed/viewbinding-7.2.2/AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.android.material:material:1.7.0] /Users/lky.iris/.gradle/caches/transforms-3/8b567fec1ce9588533f5c8cf1e7dfaa7/transformed/material-1.7.0/AndroidManifest.xml:17:1-26:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] /Users/lky.iris/.gradle/caches/transforms-3/bb63eeb5d50923381513addcbef5a157/transformed/constraintlayout-2.1.4/AndroidManifest.xml:2:1-11:12
@@ -49,31 +49,31 @@ MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/lky.iris/.gradle/c
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/lky.iris/.gradle/caches/transforms-3/5caa3533b96b9388005b8bd61198ee2f/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.print:print:1.0.0] /Users/lky.iris/.gradle/caches/transforms-3/207983e20e11da90a880a39d6eece157/transformed/print-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] /Users/lky.iris/.gradle/caches/transforms-3/ea46befc0017d8576a3c04196ed17b15/transformed/annotation-experimental-1.1.0/AndroidManifest.xml:17:1-24:12
-INJECTED from /Users/lky.iris/Documents/GitHub/ISOM3000G_MissOurTrip/app/src/main/AndroidManifest.xml:2:1-84:12
-INJECTED from /Users/lky.iris/Documents/GitHub/ISOM3000G_MissOurTrip/app/src/main/AndroidManifest.xml:2:1-84:12
-INJECTED from /Users/lky.iris/Documents/GitHub/ISOM3000G_MissOurTrip/app/src/main/AndroidManifest.xml:2:1-84:12
+INJECTED from /Users/lky.iris/Documents/GitHub/ISOM3000G_MissOurTrip/app/src/main/AndroidManifest.xml:2:1-94:12
+INJECTED from /Users/lky.iris/Documents/GitHub/ISOM3000G_MissOurTrip/app/src/main/AndroidManifest.xml:2:1-94:12
+INJECTED from /Users/lky.iris/Documents/GitHub/ISOM3000G_MissOurTrip/app/src/main/AndroidManifest.xml:2:1-94:12
 	package
 		ADDED from /Users/lky.iris/Documents/GitHub/ISOM3000G_MissOurTrip/app/src/main/AndroidManifest.xml:4:5-38
 		INJECTED from /Users/lky.iris/Documents/GitHub/ISOM3000G_MissOurTrip/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/lky.iris/Documents/GitHub/ISOM3000G_MissOurTrip/app/src/main/AndroidManifest.xml
 	android:versionName
 		INJECTED from /Users/lky.iris/Documents/GitHub/ISOM3000G_MissOurTrip/app/src/main/AndroidManifest.xml
-		ADDED from /Users/lky.iris/Documents/GitHub/ISOM3000G_MissOurTrip/app/src/main/AndroidManifest.xml:2:1-84:12
+		ADDED from /Users/lky.iris/Documents/GitHub/ISOM3000G_MissOurTrip/app/src/main/AndroidManifest.xml:2:1-94:12
 		INJECTED from /Users/lky.iris/Documents/GitHub/ISOM3000G_MissOurTrip/app/src/main/AndroidManifest.xml
 	xmlns:tools
 		ADDED from /Users/lky.iris/Documents/GitHub/ISOM3000G_MissOurTrip/app/src/main/AndroidManifest.xml:3:5-51
 	android:versionCode
 		INJECTED from /Users/lky.iris/Documents/GitHub/ISOM3000G_MissOurTrip/app/src/main/AndroidManifest.xml
-		ADDED from /Users/lky.iris/Documents/GitHub/ISOM3000G_MissOurTrip/app/src/main/AndroidManifest.xml:2:1-84:12
+		ADDED from /Users/lky.iris/Documents/GitHub/ISOM3000G_MissOurTrip/app/src/main/AndroidManifest.xml:2:1-94:12
 		INJECTED from /Users/lky.iris/Documents/GitHub/ISOM3000G_MissOurTrip/app/src/main/AndroidManifest.xml
 	xmlns:android
 		ADDED from /Users/lky.iris/Documents/GitHub/ISOM3000G_MissOurTrip/app/src/main/AndroidManifest.xml:2:11-69
 uses-permission#android.permission.INTERNET
-ADDED from /Users/lky.iris/Documents/GitHub/ISOM3000G_MissOurTrip/app/src/main/AndroidManifest.xml:6:5-66
+ADDED from /Users/lky.iris/Documents/GitHub/ISOM3000G_MissOurTrip/app/src/main/AndroidManifest.xml:6:5-67
 	android:name
 		ADDED from /Users/lky.iris/Documents/GitHub/ISOM3000G_MissOurTrip/app/src/main/AndroidManifest.xml:6:22-64
 application
-ADDED from /Users/lky.iris/Documents/GitHub/ISOM3000G_MissOurTrip/app/src/main/AndroidManifest.xml:8:5-82:19
+ADDED from /Users/lky.iris/Documents/GitHub/ISOM3000G_MissOurTrip/app/src/main/AndroidManifest.xml:8:5-92:19
 MERGED from [com.google.android.material:material:1.7.0] /Users/lky.iris/.gradle/caches/transforms-3/8b567fec1ce9588533f5c8cf1e7dfaa7/transformed/material-1.7.0/AndroidManifest.xml:24:5-20
 MERGED from [com.google.android.material:material:1.7.0] /Users/lky.iris/.gradle/caches/transforms-3/8b567fec1ce9588533f5c8cf1e7dfaa7/transformed/material-1.7.0/AndroidManifest.xml:24:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] /Users/lky.iris/.gradle/caches/transforms-3/bb63eeb5d50923381513addcbef5a157/transformed/constraintlayout-2.1.4/AndroidManifest.xml:9:5-20
@@ -111,83 +111,89 @@ MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/lky.iris/.gradle/cac
 	android:dataExtractionRules
 		ADDED from /Users/lky.iris/Documents/GitHub/ISOM3000G_MissOurTrip/app/src/main/AndroidManifest.xml:10:9-65
 activity#com.example.missourtrip.RateActivity
-ADDED from /Users/lky.iris/Documents/GitHub/ISOM3000G_MissOurTrip/app/src/main/AndroidManifest.xml:18:9-25:20
+ADDED from /Users/lky.iris/Documents/GitHub/ISOM3000G_MissOurTrip/app/src/main/AndroidManifest.xml:19:9-26:20
 	android:parentActivityName
-		ADDED from /Users/lky.iris/Documents/GitHub/ISOM3000G_MissOurTrip/app/src/main/AndroidManifest.xml:20:13-55
+		ADDED from /Users/lky.iris/Documents/GitHub/ISOM3000G_MissOurTrip/app/src/main/AndroidManifest.xml:22:13-55
 	android:exported
 		ADDED from /Users/lky.iris/Documents/GitHub/ISOM3000G_MissOurTrip/app/src/main/AndroidManifest.xml:21:13-37
 	android:name
-		ADDED from /Users/lky.iris/Documents/GitHub/ISOM3000G_MissOurTrip/app/src/main/AndroidManifest.xml:19:13-41
+		ADDED from /Users/lky.iris/Documents/GitHub/ISOM3000G_MissOurTrip/app/src/main/AndroidManifest.xml:20:13-41
 meta-data#android.app.lib_name
-ADDED from /Users/lky.iris/Documents/GitHub/ISOM3000G_MissOurTrip/app/src/main/AndroidManifest.xml:22:13-24:36
+ADDED from /Users/lky.iris/Documents/GitHub/ISOM3000G_MissOurTrip/app/src/main/AndroidManifest.xml:23:13-25:36
 	android:value
-		ADDED from /Users/lky.iris/Documents/GitHub/ISOM3000G_MissOurTrip/app/src/main/AndroidManifest.xml:24:17-33
+		ADDED from /Users/lky.iris/Documents/GitHub/ISOM3000G_MissOurTrip/app/src/main/AndroidManifest.xml:25:17-33
 	android:name
-		ADDED from /Users/lky.iris/Documents/GitHub/ISOM3000G_MissOurTrip/app/src/main/AndroidManifest.xml:23:17-52
+		ADDED from /Users/lky.iris/Documents/GitHub/ISOM3000G_MissOurTrip/app/src/main/AndroidManifest.xml:24:17-52
 activity#com.example.missourtrip.AddExpenseActivity
-ADDED from /Users/lky.iris/Documents/GitHub/ISOM3000G_MissOurTrip/app/src/main/AndroidManifest.xml:26:9-32:20
+ADDED from /Users/lky.iris/Documents/GitHub/ISOM3000G_MissOurTrip/app/src/main/AndroidManifest.xml:27:9-33:20
 	android:exported
-		ADDED from /Users/lky.iris/Documents/GitHub/ISOM3000G_MissOurTrip/app/src/main/AndroidManifest.xml:28:13-37
+		ADDED from /Users/lky.iris/Documents/GitHub/ISOM3000G_MissOurTrip/app/src/main/AndroidManifest.xml:29:13-37
 	android:name
-		ADDED from /Users/lky.iris/Documents/GitHub/ISOM3000G_MissOurTrip/app/src/main/AndroidManifest.xml:27:13-47
+		ADDED from /Users/lky.iris/Documents/GitHub/ISOM3000G_MissOurTrip/app/src/main/AndroidManifest.xml:28:13-47
 activity#com.example.missourtrip.ExpenseActivity
-ADDED from /Users/lky.iris/Documents/GitHub/ISOM3000G_MissOurTrip/app/src/main/AndroidManifest.xml:33:9-39:20
+ADDED from /Users/lky.iris/Documents/GitHub/ISOM3000G_MissOurTrip/app/src/main/AndroidManifest.xml:34:9-40:20
 	android:exported
-		ADDED from /Users/lky.iris/Documents/GitHub/ISOM3000G_MissOurTrip/app/src/main/AndroidManifest.xml:35:13-37
+		ADDED from /Users/lky.iris/Documents/GitHub/ISOM3000G_MissOurTrip/app/src/main/AndroidManifest.xml:36:13-37
 	android:name
-		ADDED from /Users/lky.iris/Documents/GitHub/ISOM3000G_MissOurTrip/app/src/main/AndroidManifest.xml:34:13-44
+		ADDED from /Users/lky.iris/Documents/GitHub/ISOM3000G_MissOurTrip/app/src/main/AndroidManifest.xml:35:13-44
 activity#com.example.missourtrip.AddCategoryActivity
-ADDED from /Users/lky.iris/Documents/GitHub/ISOM3000G_MissOurTrip/app/src/main/AndroidManifest.xml:40:9-46:20
+ADDED from /Users/lky.iris/Documents/GitHub/ISOM3000G_MissOurTrip/app/src/main/AndroidManifest.xml:41:9-47:20
 	android:exported
-		ADDED from /Users/lky.iris/Documents/GitHub/ISOM3000G_MissOurTrip/app/src/main/AndroidManifest.xml:42:13-37
+		ADDED from /Users/lky.iris/Documents/GitHub/ISOM3000G_MissOurTrip/app/src/main/AndroidManifest.xml:43:13-37
 	android:name
-		ADDED from /Users/lky.iris/Documents/GitHub/ISOM3000G_MissOurTrip/app/src/main/AndroidManifest.xml:41:13-48
+		ADDED from /Users/lky.iris/Documents/GitHub/ISOM3000G_MissOurTrip/app/src/main/AndroidManifest.xml:42:13-48
 activity#com.example.missourtrip.CategoryActivity
-ADDED from /Users/lky.iris/Documents/GitHub/ISOM3000G_MissOurTrip/app/src/main/AndroidManifest.xml:47:9-53:20
+ADDED from /Users/lky.iris/Documents/GitHub/ISOM3000G_MissOurTrip/app/src/main/AndroidManifest.xml:48:9-54:20
 	android:exported
-		ADDED from /Users/lky.iris/Documents/GitHub/ISOM3000G_MissOurTrip/app/src/main/AndroidManifest.xml:49:13-37
+		ADDED from /Users/lky.iris/Documents/GitHub/ISOM3000G_MissOurTrip/app/src/main/AndroidManifest.xml:50:13-37
 	android:name
-		ADDED from /Users/lky.iris/Documents/GitHub/ISOM3000G_MissOurTrip/app/src/main/AndroidManifest.xml:48:13-45
+		ADDED from /Users/lky.iris/Documents/GitHub/ISOM3000G_MissOurTrip/app/src/main/AndroidManifest.xml:49:13-45
 activity#com.example.missourtrip.ResetPasswordActivity
-ADDED from /Users/lky.iris/Documents/GitHub/ISOM3000G_MissOurTrip/app/src/main/AndroidManifest.xml:54:9-61:20
+ADDED from /Users/lky.iris/Documents/GitHub/ISOM3000G_MissOurTrip/app/src/main/AndroidManifest.xml:55:9-62:20
 	android:parentActivityName
-		ADDED from /Users/lky.iris/Documents/GitHub/ISOM3000G_MissOurTrip/app/src/main/AndroidManifest.xml:56:13-55
+		ADDED from /Users/lky.iris/Documents/GitHub/ISOM3000G_MissOurTrip/app/src/main/AndroidManifest.xml:57:13-55
 	android:name
-		ADDED from /Users/lky.iris/Documents/GitHub/ISOM3000G_MissOurTrip/app/src/main/AndroidManifest.xml:55:13-50
+		ADDED from /Users/lky.iris/Documents/GitHub/ISOM3000G_MissOurTrip/app/src/main/AndroidManifest.xml:56:13-50
 meta-data#android.support.PARENT_ACTIVITY
-ADDED from /Users/lky.iris/Documents/GitHub/ISOM3000G_MissOurTrip/app/src/main/AndroidManifest.xml:57:13-59:49
+ADDED from /Users/lky.iris/Documents/GitHub/ISOM3000G_MissOurTrip/app/src/main/AndroidManifest.xml:58:13-60:49
 	android:value
-		ADDED from /Users/lky.iris/Documents/GitHub/ISOM3000G_MissOurTrip/app/src/main/AndroidManifest.xml:59:17-46
+		ADDED from /Users/lky.iris/Documents/GitHub/ISOM3000G_MissOurTrip/app/src/main/AndroidManifest.xml:60:17-46
 	android:name
-		ADDED from /Users/lky.iris/Documents/GitHub/ISOM3000G_MissOurTrip/app/src/main/AndroidManifest.xml:58:17-63
+		ADDED from /Users/lky.iris/Documents/GitHub/ISOM3000G_MissOurTrip/app/src/main/AndroidManifest.xml:59:17-63
 activity#com.example.missourtrip.HomeActivity
-ADDED from /Users/lky.iris/Documents/GitHub/ISOM3000G_MissOurTrip/app/src/main/AndroidManifest.xml:62:9-64:40
+ADDED from /Users/lky.iris/Documents/GitHub/ISOM3000G_MissOurTrip/app/src/main/AndroidManifest.xml:63:9-65:40
 	android:exported
-		ADDED from /Users/lky.iris/Documents/GitHub/ISOM3000G_MissOurTrip/app/src/main/AndroidManifest.xml:64:13-37
+		ADDED from /Users/lky.iris/Documents/GitHub/ISOM3000G_MissOurTrip/app/src/main/AndroidManifest.xml:65:13-37
 	android:name
-		ADDED from /Users/lky.iris/Documents/GitHub/ISOM3000G_MissOurTrip/app/src/main/AndroidManifest.xml:63:13-41
+		ADDED from /Users/lky.iris/Documents/GitHub/ISOM3000G_MissOurTrip/app/src/main/AndroidManifest.xml:64:13-41
 activity#com.example.missourtrip.LoginActivity
-ADDED from /Users/lky.iris/Documents/GitHub/ISOM3000G_MissOurTrip/app/src/main/AndroidManifest.xml:65:9-72:20
+ADDED from /Users/lky.iris/Documents/GitHub/ISOM3000G_MissOurTrip/app/src/main/AndroidManifest.xml:66:9-73:20
 	android:parentActivityName
-		ADDED from /Users/lky.iris/Documents/GitHub/ISOM3000G_MissOurTrip/app/src/main/AndroidManifest.xml:67:13-55
+		ADDED from /Users/lky.iris/Documents/GitHub/ISOM3000G_MissOurTrip/app/src/main/AndroidManifest.xml:68:13-55
 	android:name
-		ADDED from /Users/lky.iris/Documents/GitHub/ISOM3000G_MissOurTrip/app/src/main/AndroidManifest.xml:66:13-42
+		ADDED from /Users/lky.iris/Documents/GitHub/ISOM3000G_MissOurTrip/app/src/main/AndroidManifest.xml:67:13-42
 activity#com.example.missourtrip.MainActivity
-ADDED from /Users/lky.iris/Documents/GitHub/ISOM3000G_MissOurTrip/app/src/main/AndroidManifest.xml:73:9-81:20
+ADDED from /Users/lky.iris/Documents/GitHub/ISOM3000G_MissOurTrip/app/src/main/AndroidManifest.xml:74:9-82:20
 	android:exported
-		ADDED from /Users/lky.iris/Documents/GitHub/ISOM3000G_MissOurTrip/app/src/main/AndroidManifest.xml:75:13-36
+		ADDED from /Users/lky.iris/Documents/GitHub/ISOM3000G_MissOurTrip/app/src/main/AndroidManifest.xml:76:13-36
 	android:name
-		ADDED from /Users/lky.iris/Documents/GitHub/ISOM3000G_MissOurTrip/app/src/main/AndroidManifest.xml:74:13-41
+		ADDED from /Users/lky.iris/Documents/GitHub/ISOM3000G_MissOurTrip/app/src/main/AndroidManifest.xml:75:13-41
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /Users/lky.iris/Documents/GitHub/ISOM3000G_MissOurTrip/app/src/main/AndroidManifest.xml:76:13-80:29
+ADDED from /Users/lky.iris/Documents/GitHub/ISOM3000G_MissOurTrip/app/src/main/AndroidManifest.xml:77:13-81:29
 action#android.intent.action.MAIN
-ADDED from /Users/lky.iris/Documents/GitHub/ISOM3000G_MissOurTrip/app/src/main/AndroidManifest.xml:77:17-69
+ADDED from /Users/lky.iris/Documents/GitHub/ISOM3000G_MissOurTrip/app/src/main/AndroidManifest.xml:78:17-69
 	android:name
-		ADDED from /Users/lky.iris/Documents/GitHub/ISOM3000G_MissOurTrip/app/src/main/AndroidManifest.xml:77:25-66
+		ADDED from /Users/lky.iris/Documents/GitHub/ISOM3000G_MissOurTrip/app/src/main/AndroidManifest.xml:78:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /Users/lky.iris/Documents/GitHub/ISOM3000G_MissOurTrip/app/src/main/AndroidManifest.xml:79:17-77
+ADDED from /Users/lky.iris/Documents/GitHub/ISOM3000G_MissOurTrip/app/src/main/AndroidManifest.xml:80:17-77
 	android:name
-		ADDED from /Users/lky.iris/Documents/GitHub/ISOM3000G_MissOurTrip/app/src/main/AndroidManifest.xml:79:27-74
+		ADDED from /Users/lky.iris/Documents/GitHub/ISOM3000G_MissOurTrip/app/src/main/AndroidManifest.xml:80:27-74
+activity#com.example.missourtrip.ExpenseSplitActivity
+ADDED from /Users/lky.iris/Documents/GitHub/ISOM3000G_MissOurTrip/app/src/main/AndroidManifest.xml:83:9-91:20
+	android:exported
+		ADDED from /Users/lky.iris/Documents/GitHub/ISOM3000G_MissOurTrip/app/src/main/AndroidManifest.xml:85:13-36
+	android:name
+		ADDED from /Users/lky.iris/Documents/GitHub/ISOM3000G_MissOurTrip/app/src/main/AndroidManifest.xml:84:13-49
 uses-sdk
 INJECTED from /Users/lky.iris/Documents/GitHub/ISOM3000G_MissOurTrip/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/lky.iris/Documents/GitHub/ISOM3000G_MissOurTrip/app/src/main/AndroidManifest.xml

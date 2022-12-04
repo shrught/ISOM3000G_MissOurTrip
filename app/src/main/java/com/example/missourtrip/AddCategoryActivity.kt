@@ -52,4 +52,16 @@ class AddCategoryActivity : AppCompatActivity() {
         }
     }
 
+
+    private fun update(category: Category){
+        val db = Room.databaseBuilder(this,
+            AppDatabase::class.java,
+            "categories").build()
+
+        GlobalScope.launch {
+            db.categoryDao().update(category)
+            finish()
+        }
+    }
+
 }
