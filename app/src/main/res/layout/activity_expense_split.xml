@@ -40,6 +40,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:inputType="numberDecimal"
                     android:textSize="28sp" />
 
             </LinearLayout>
@@ -55,7 +56,7 @@
                 android:orientation="horizontal">
 
                 <EditText
-                    android:id="@+id/editTextTextPersonName"
+                    android:id="@+id/Name"
                     android:layout_width="104dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -70,6 +71,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:inputType="numberDecimal"
                     android:textSize="28sp" />
 
             </LinearLayout>
@@ -118,7 +120,6 @@
         android:id="@+id/split_save"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
         android:backgroundTint="@color/teal_700"
         android:text="@string/save"
         app:layout_constraintEnd_toEndOf="parent"
@@ -161,6 +162,6 @@
         app:layout_constraintHorizontal_bias="0.48"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/scrollView3"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.303" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

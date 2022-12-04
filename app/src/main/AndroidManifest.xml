@@ -15,7 +15,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MissOurTrip"
         tools:targetApi="31">
-
+        <activity
+            android:name=".EditExpenseActivity"
+            android:exported="false" />
+        <activity
+            android:name=".editCategory"
+            android:exported="false" />
         <activity
             android:name=".RateActivity"
             android:exported="false"

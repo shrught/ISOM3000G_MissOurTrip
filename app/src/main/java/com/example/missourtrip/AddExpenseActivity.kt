@@ -20,7 +20,7 @@ import java.util.*
 
 
 class AddExpenseActivity : AppCompatActivity(), AdapterView.OnItemSelectedListener {
-    private lateinit var expenses:ArrayList<Expense>
+    private lateinit var expense:Expense
     private lateinit var expenseAdapter: ExpenseAdapter
     private lateinit var linearLayoutManager: LinearLayoutManager
     private lateinit var db: AppDatabase
@@ -35,6 +35,16 @@ class AddExpenseActivity : AppCompatActivity(), AdapterView.OnItemSelectedListen
 
         val dateView = findViewById<View>(R.id.exp_date) as TextView
         setDate(dateView)
+
+        var editCheck: Boolean
+
+        if (intent.getSerializableExtra("expense") != null) {
+            expense = intent.getSerializableExtra("expense") as Expense
+            editCheck = true
+        }
+        else{
+            editCheck = false
+        }
 
         db = Room.databaseBuilder(this,
             AppDatabase::class.java,
@@ -68,6 +78,16 @@ class AddExpenseActivity : AppCompatActivity(), AdapterView.OnItemSelectedListen
             onItemSelectedListener = this@AddExpenseActivity
             gravity = Gravity.CENTER
 
+        }
+
+
+        if (editCheck == true){
+            expense = intent.getSerializableExtra("expense") as Expense
+            exp_title.text = "Edit Expense"
+            exp_name.setText(expense.name)
+            exp_currency.setSelection(curencyList.indexOf(expense.currency))
+            exp_amount.setText(expense.amount.toString())
+            exp_category.setSelection(catList.indexOf(expense.category))
         }
 
 
@@ -110,8 +130,14 @@ class AddExpenseActivity : AppCompatActivity(), AdapterView.OnItemSelectedListen
             }
 
             else{
-                val expense = Expense(0, name, amount,currency, date, category, 1 , "",false)
-                insert(expense)
+                if (editCheck == false) {
+                    val expenses = Expense(0, name, amount, currency, date, category, 1, "", false)
+                    insert(expenses)
+                }
+                else{
+                    val expenses = Expense(expense.id, name, amount, currency, date, category, 1, "", false)
+                    update(expenses)
+                }
             }
 
         }
@@ -159,6 +185,9 @@ class AddExpenseActivity : AppCompatActivity(), AdapterView.OnItemSelectedListen
                     putExtra("currency", currency);
                     putExtra("date", date);
                     putExtra("category", category);
+                    if (editCheck == true) {
+                        putExtra("expense", expense)
+                    }
                 }
                 startActivity(intent)
             }
@@ -204,6 +233,17 @@ class AddExpenseActivity : AppCompatActivity(), AdapterView.OnItemSelectedListen
             return false;
         }
         return true;
+    }
+
+    private fun update(expense: Expense){
+        val db = Room.databaseBuilder(this,
+            AppDatabase::class.java,
+            "expenses").build()
+
+        GlobalScope.launch {
+            db.expenseDao().update(expense)
+            finish()
+        }
     }
 
 }
