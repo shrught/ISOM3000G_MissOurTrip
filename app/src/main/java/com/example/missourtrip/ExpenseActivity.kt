@@ -32,6 +32,7 @@ class ExpenseActivity : AppCompatActivity() {
 
         expenseAdapter = ExpenseAdapter(expenses)
         linearLayoutManager_exp = LinearLayoutManager(this)
+
         db = Room.databaseBuilder(this,
             AppDatabase::class.java,
             "expenses").fallbackToDestructiveMigration().build()

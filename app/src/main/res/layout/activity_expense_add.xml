@@ -26,7 +26,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.106"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+        app:layout_constraintTop_toBottomOf="@+id/exp_title" />
 
     <TextView
         android:id="@+id/textView7"
@@ -38,24 +38,24 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.107"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+        app:layout_constraintTop_toBottomOf="@+id/exp_title" />
 
     <EditText
         android:id="@+id/exp_amount"
-        android:layout_width="161dp"
-        android:layout_height="46dp"
+        android:layout_width="142dp"
+        android:layout_height="45dp"
         android:layout_marginTop="4dp"
         android:autofillHints="0.0"
         android:ems="10"
         android:hint="@string/_0_0"
-        android:inputType="numberDecimal"
+        android:inputType="number"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.876"
+        app:layout_constraintHorizontal_bias="0.884"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/exp_currency" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/exp_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="100dp"
@@ -72,9 +72,10 @@
         android:layout_width="252dp"
         android:layout_height="43dp"
         android:layout_marginTop="8dp"
-        android:autoText="true"
         android:autofillHints=""
+        android:bufferType="editable"
         android:ems="10"
+        android:importantForAutofill="auto"
         android:inputType="date"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.805"
@@ -84,12 +85,12 @@
 
     <Spinner
         android:id="@+id/exp_currency"
-        android:layout_width="81dp"
-        android:layout_height="43dp"
+        android:layout_width="111dp"
+        android:layout_height="48dp"
         android:layout_marginTop="8dp"
         android:spinnerMode="dropdown"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.387"
+        app:layout_constraintHorizontal_bias="0.416"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/textView4"
         tools:ignore="TouchTargetSizeCheck" />
@@ -104,7 +105,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.107"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+        app:layout_constraintTop_toBottomOf="@+id/exp_title" />
 
     <EditText
         android:id="@+id/exp_name"
@@ -117,7 +118,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.805"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/exp_title"
         tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
 
     <TextView
@@ -130,7 +131,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.102"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+        app:layout_constraintTop_toBottomOf="@+id/exp_title" />
 
     <TextView
         android:id="@+id/warningAddExp"
@@ -138,6 +139,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="72dp"
         android:text=""
+        android:textColor="#FF0000"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

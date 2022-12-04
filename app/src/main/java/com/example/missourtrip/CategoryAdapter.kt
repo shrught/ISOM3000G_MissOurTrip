@@ -25,8 +25,10 @@ class CategoryAdapter(private var categories: List<Category>) : RecyclerView.Ada
         holder.name.text = category.name
 
         holder.itemView.setOnClickListener {
-            val intent = Intent(context, AddCategoryActivity::class.java)
-            intent.putExtra("category", category)
+            val intent = Intent(context, editCategory::class.java).apply {
+                putExtra("category_name", category.name)
+                putExtra("category_des", category.description)
+            }
             context.startActivity(intent)
         }
     }
