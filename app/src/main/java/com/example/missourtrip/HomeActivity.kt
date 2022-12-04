@@ -62,6 +62,11 @@ class HomeActivity : AppCompatActivity() {
         startActivity(expenseIntent)
     }
 
+    fun toStatistics(view: View){
+        val statisticsIntent = Intent(this, StatisticsActivity::class.java).apply {  }
+        startActivity(statisticsIntent)
+    }
+    
     private fun insert(category: Category){
         val db = Room.databaseBuilder(this,
             AppDatabase::class.java,
@@ -72,5 +77,4 @@ class HomeActivity : AppCompatActivity() {
             finish()
         }
     }
-
 }
