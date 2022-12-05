@@ -86,6 +86,7 @@ class AddExpenseActivity : AppCompatActivity(), AdapterView.OnItemSelectedListen
             expense = intent.getSerializableExtra("expense") as Expense
             exp_title.text = "Edit Expense"
             exp_name.setText(expense.name)
+            exp_date.setText(expense.date)
             exp_currency.setSelection(curencyList.indexOf(expense.currency))
             exp_amount.setText(expense.amount.toString())
             exp_category.setSelection(catList.indexOf(expense.category))
