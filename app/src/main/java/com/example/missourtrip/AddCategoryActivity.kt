@@ -11,9 +11,18 @@ import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
 
 class AddCategoryActivity : AppCompatActivity() {
+    private lateinit var db: AppDatabase
+    private lateinit var catList: List<String>
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_category_add)
+
+        db = Room.databaseBuilder(this,
+            AppDatabase::class.java,
+            "categories").allowMainThreadQueries().build()
+
+        catList = db.categoryDao().getName()
 
         cate_save_btn.setOnClickListener {
             val name = cate_name.text.toString()
@@ -27,6 +36,9 @@ class AddCategoryActivity : AppCompatActivity() {
 
             if (name.isEmpty()){
                 warningAddCate.text = "Please enter a valid name"
+            }
+            else if (name in catList){
+                warningAddCate.text = "Names of categories cannot be the same"
             }
             else {
 
