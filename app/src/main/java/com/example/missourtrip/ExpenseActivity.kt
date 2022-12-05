@@ -113,6 +113,7 @@ class ExpenseActivity : AppCompatActivity() {
     private fun deleteExpense(expense: Expense){
         deletedExpense = expense
         oldExpenses = expenses
+        Toast.makeText(this, "Expense deleted.", Toast.LENGTH_SHORT).show()
 
         GlobalScope.launch {
             db.expenseDao().delete(expense)
