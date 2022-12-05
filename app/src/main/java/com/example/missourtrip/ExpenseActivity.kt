@@ -1,19 +1,22 @@
 package com.example.missourtrip
 
-import androidx.appcompat.app.AppCompatActivity
-import android.os.Bundle
 import android.content.Intent
-import android.view.View
+import android.os.Bundle
+import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.ItemTouchHelper
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import androidx.room.Room
-import com.google.android.material.snackbar.Snackbar
+import com.github.doyaaaaaken.kotlincsv.dsl.csvWriter
 import kotlinx.android.synthetic.main.activity_expense_main.*
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
 import java.io.File
+import java.io.FileWriter
+import java.io.StringReader
+import kotlin.math.exp
 
 
 class ExpenseActivity : AppCompatActivity() {
@@ -23,6 +26,7 @@ class ExpenseActivity : AppCompatActivity() {
     private lateinit var expenseAdapter: ExpenseAdapter
     private lateinit var linearLayoutManager_exp: LinearLayoutManager
     private lateinit var db: AppDatabase
+    private lateinit var dbExport: AppDatabase
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -65,6 +69,31 @@ class ExpenseActivity : AppCompatActivity() {
             val intent = Intent(this, AddExpenseActivity::class.java)
             startActivity(intent)
         }
+
+        export_btn.setOnClickListener {
+            exportCSV()
+        }
+
+    }
+
+    private fun exportCSV(){
+        val path = filesDir
+        val exportCsv = File(path, "expenses.csv")
+        if(!exportCsv.exists()){
+            exportCsv.createNewFile()
+        }
+
+        dbExport = Room.databaseBuilder(this,
+            AppDatabase::class.java,
+            "expenses").allowMainThreadQueries().build()
+
+
+        var simpleExpenseList = arrayListOf<List<String>>()
+        for(expense in dbExport.expenseDao().getAll()){
+            simpleExpenseList.add(listOf(expense.name, expense.amount.toString()) )
+        }
+        csvWriter().writeAll(simpleExpenseList, exportCsv)
+        Toast.makeText(this,"Export Successful", Toast.LENGTH_SHORT).show()
 
     }
 

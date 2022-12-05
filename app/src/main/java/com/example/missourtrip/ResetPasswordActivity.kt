@@ -22,7 +22,7 @@ class ResetPasswordActivity : AppCompatActivity() {
 
         if(current_password.text.toString() == saved_password.readText()){
 
-            if(new_password.text == null){
+            if(new_password.text.toString() == ""){
                 Toast.makeText(this, "Password Can't be Null!!",Toast.LENGTH_SHORT).show()
             }
             else{
