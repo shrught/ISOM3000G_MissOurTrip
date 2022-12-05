@@ -2,6 +2,7 @@ package com.example.missourtrip
 
 import android.content.Intent
 import android.os.Bundle
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.widget.addTextChangedListener
 import androidx.room.Room
@@ -30,15 +31,14 @@ class AddCategoryActivity : AppCompatActivity() {
 
             cate_name.addTextChangedListener {
                 if(it!!.count() > 0){
-                    warningAddCate.text = ""
                 }
             }
 
             if (name.isEmpty()){
-                warningAddCate.text = "Please enter a valid name"
+                Toast.makeText(this, "Please enter a valid name.", Toast.LENGTH_SHORT).show()
             }
             else if (name in catList){
-                warningAddCate.text = "Names of categories cannot be the same"
+                Toast.makeText(this, "Names of categories cannot be the same.", Toast.LENGTH_SHORT).show()
             }
             else {
 

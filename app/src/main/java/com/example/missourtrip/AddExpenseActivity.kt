@@ -98,35 +98,23 @@ class AddExpenseActivity : AppCompatActivity(), AdapterView.OnItemSelectedListen
             val category = exp_category.getSelectedItem().toString()
             val currency = exp_currency.getSelectedItem().toString()
 
-            exp_name.addTextChangedListener {
-                if(it!!.count() > 0){
-                    warningAddExp.text = ""
-                }
-            }
-            exp_amount.addTextChangedListener {
-                if(it!!.count() > 0){
-                    warningAddExp.text = ""
-                }
-            }
-
-
             if (name.isEmpty()){
-                warningAddExp.text = "Please enter a valid name"
+                Toast.makeText(this, "Please enter a valid name.", Toast.LENGTH_SHORT).show()
             }
             else if (amount == null){
-                warningAddExp.text = "Please enter a valid amount"
+                Toast.makeText(this, "Please enter a valid amount.", Toast.LENGTH_SHORT).show()
             }
             else if (currency == null){
-                warningAddExp.text = "Please enter a valid amount"
+                Toast.makeText(this, "Please choose a currency.", Toast.LENGTH_SHORT).show()
             }
             else if (date == null){
-                warningAddExp.text = "Please enter a valid amount"
+                Toast.makeText(this, "Please enter date in format: dd/mm/yyyy.", Toast.LENGTH_SHORT).show()
             }
             else if (checkDate(date) == false){
-                warningAddExp.text = "Please enter date in format - dd/mm/yyyy"
+                Toast.makeText(this, "Please enter date in format: dd/mm/yyyy.", Toast.LENGTH_SHORT).show()
             }
             else if (category == null){
-                warningAddExp.text = "Please enter a valid amount"
+                Toast.makeText(this, "Please choose a category.", Toast.LENGTH_SHORT).show()
             }
 
             else{
@@ -149,33 +137,23 @@ class AddExpenseActivity : AppCompatActivity(), AdapterView.OnItemSelectedListen
             val category = exp_category.getSelectedItem().toString()
             val currency = exp_currency.getSelectedItem().toString()
 
-            exp_name.addTextChangedListener {
-                if(it!!.count() > 0){
-                    warningAddExp.text = ""
-                }
-            }
-            exp_amount.addTextChangedListener {
-                if(it!!.count() > 0){
-                    warningAddExp.text = ""
-                }
-            }
             if (name.isEmpty()){
-                warningAddExp.text = "Please enter a valid name"
+                Toast.makeText(this, "Please enter a valid name.", Toast.LENGTH_SHORT).show()
             }
             else if (amount == null){
-                warningAddExp.text = "Please enter a valid amount"
+                Toast.makeText(this, "Please enter a valid amount.", Toast.LENGTH_SHORT).show()
             }
             else if (currency == null){
-                warningAddExp.text = "Please enter a valid amount"
+                Toast.makeText(this, "Please choose a currency.", Toast.LENGTH_SHORT).show()
             }
             else if (date == null){
-                warningAddExp.text = "Please enter a valid amount"
+                Toast.makeText(this, "Please enter date in format: dd/mm/yyyy.", Toast.LENGTH_SHORT).show()
             }
             else if (checkDate(date) == false){
-                warningAddExp.text = "Please enter date in format - dd/mm/yyyy"
+                Toast.makeText(this, "Please enter date in format: dd/mm/yyyy.", Toast.LENGTH_SHORT).show()
             }
             else if (category == null){
-                warningAddExp.text = "Please enter a valid amount"
+                Toast.makeText(this, "Please choose a category.", Toast.LENGTH_SHORT).show()
             }
 
             else{
