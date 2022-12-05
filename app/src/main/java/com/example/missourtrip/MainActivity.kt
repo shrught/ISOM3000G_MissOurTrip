@@ -24,6 +24,10 @@ class MainActivity : AppCompatActivity() {
         val path = filesDir
         val saved_password = File(path, "password.txt");
 
+        if(!saved_password.exists()){
+            saved_password.createNewFile()
+        }
+
         if(saved_password.readText() == ""){
             var user_password = ""
             user_password = signup_password.text.toString()
