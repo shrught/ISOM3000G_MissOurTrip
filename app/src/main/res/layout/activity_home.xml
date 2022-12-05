@@ -12,7 +12,7 @@
         android:layout_height="60dp"
         android:layout_marginTop="80dp"
         android:layout_marginBottom="492dp"
-        android:onClick="toExpenses"
+        android:onClick="toExpense"
 
         android:text="@string/expenses"
         app:layout_constraintBottom_toBottomOf="parent"

@@ -93,7 +93,7 @@ class AddExpenseActivity : AppCompatActivity(), AdapterView.OnItemSelectedListen
 
         exp_save_btn.setOnClickListener{
             val name = exp_name.text.toString()
-            val amount = exp_amount.text.toString().toDoubleOrNull()
+            val amount = exp_amount.text.toString().toDouble()
             val date = exp_date.text.toString()
             val category = exp_category.getSelectedItem().toString()
             val currency = exp_currency.getSelectedItem().toString()
