@@ -4,11 +4,13 @@ import android.content.Intent
 import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.ItemTouchHelper
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import androidx.room.Room
 import com.github.doyaaaaaken.kotlincsv.dsl.csvWriter
+import kotlinx.android.synthetic.main.activity_category_main.*
 import kotlinx.android.synthetic.main.activity_expense_main.*
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.coroutines.GlobalScope
@@ -44,6 +46,7 @@ class ExpenseActivity : AppCompatActivity() {
             adapter = expenseAdapter
             layoutManager = linearLayoutManager_exp
         }
+        recycleView_exp.addItemDecoration(DividerItemDecoration(this, DividerItemDecoration.VERTICAL))
 
         //swipe to remove
         val itemTouchHelper = object : ItemTouchHelper.SimpleCallback(0,ItemTouchHelper.LEFT){

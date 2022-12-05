@@ -177,7 +177,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/category"
-            android:layout_marginTop="10dp"
             android:textSize="20sp" />
 
         <Space
@@ -227,7 +226,6 @@
             android:id="@+id/split_btn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:backgroundTint="@color/teal_700"
             android:text="@string/split"
             tools:ignore="TextContrastCheck" />
 
@@ -240,7 +238,6 @@
             android:id="@+id/exp_save_btn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:backgroundTint="@color/teal_700"
             android:text="@string/save"
             tools:ignore="TextContrastCheck" />
 
