@@ -37,9 +37,7 @@ class HomeActivity : AppCompatActivity() {
 
         catList = db.categoryDao().getName()
 
-        println(catList + "111111111111")
-
-        if (catList == null){
+        if (catList.isEmpty()){
             val category = Category( "Food", "Food")
             insert(category)
         }

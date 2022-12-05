@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.content.Intent
 import android.graphics.Color
 import android.view.View
+import android.widget.Toast
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.ItemTouchHelper
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -21,10 +22,12 @@ import java.io.File
 class CategoryActivity : AppCompatActivity() {
     private lateinit var deletedCategory: Category
     private lateinit var categories: List<Category>
+    private lateinit var expenses: List<Expense>
     private lateinit var oldCategories: List<Category>
     private lateinit var categoryAdapter: CategoryAdapter
     private lateinit var linearLayoutManager_cat: LinearLayoutManager
-    private lateinit var db: AppDatabase
+    private lateinit var db_cat: AppDatabase
+    private lateinit var db_exp: AppDatabase
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -35,10 +38,16 @@ class CategoryActivity : AppCompatActivity() {
         categoryAdapter = CategoryAdapter(categories)
         linearLayoutManager_cat = LinearLayoutManager(this)
 
-        db = Room.databaseBuilder(this,
+        db_exp= Room.databaseBuilder(this,
             AppDatabase::class.java,
-            "categories").fallbackToDestructiveMigration().build()
+            "expenses").allowMainThreadQueries().fallbackToDestructiveMigration().build()
 
+
+        db_cat = Room.databaseBuilder(this,
+            AppDatabase::class.java,
+            "categories").allowMainThreadQueries().fallbackToDestructiveMigration().build()
+
+        expenses = db_exp.expenseDao().getAll()
 
         recycleView_cat.apply {
             adapter = categoryAdapter
@@ -56,9 +65,8 @@ class CategoryActivity : AppCompatActivity() {
             }
 
             override fun onSwiped(viewHolder: RecyclerView.ViewHolder, direction: Int) {
-
                 deletedCategory(categories[viewHolder.adapterPosition])
-            }
+                }
         }
 
         val swipeHelper = ItemTouchHelper(itemTouchHelper)
@@ -73,22 +81,32 @@ class CategoryActivity : AppCompatActivity() {
 
     private fun fetchAllCate(){
         GlobalScope.launch {
-            categories = db.categoryDao().getAll()
+            categories = db_cat.categoryDao().getAll()
             runOnUiThread{
                 categoryAdapter.setData(categories)
             }
         }
     }
 
+
+
     private fun deletedCategory(category: Category){
         deletedCategory = category
         oldCategories = categories
+        expenses = expenses.filter { it.category == category.name}
+        if (expenses.isEmpty()) {
+            Toast.makeText(this, "Category deleted.", Toast.LENGTH_SHORT).show()
 
-        GlobalScope.launch {
-            db.categoryDao().delete(category)
+            GlobalScope.launch {
 
-            categories = categories.filter { it.name != category.name}
-            runOnUiThread {}
+                db_cat.categoryDao().delete(category)
+                categories = categories.filter { it.name != category.name}
+                runOnUiThread {}
+            }
+        }
+        else{
+            Toast.makeText(this, "This category cannot be deleted. Please delete all related expenses first.", Toast.LENGTH_SHORT).show()
+            fetchAllCate()
         }
     }
 
