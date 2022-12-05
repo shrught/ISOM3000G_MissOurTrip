@@ -5,6 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
+import android.widget.Toast
 import androidx.constraintlayout.motion.widget.TransitionAdapter
 import androidx.recyclerview.widget.RecyclerView
 import kotlinx.android.synthetic.main.expense_layout.view.*
@@ -32,7 +33,9 @@ class ExpenseAdapter(private var expenses: List<Expense>): RecyclerView.Adapter<
             val intent = Intent(context, AddExpenseActivity::class.java).apply {
                 putExtra("expense", expense)
             }
-            context.startActivity(intent)
+            if (expense.settled == false) {
+                context.startActivity(intent)
+            }
         }
     }
 
