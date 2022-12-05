@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.content.Intent
 import android.view.View
+import android.widget.Toast
 import com.google.android.material.snackbar.Snackbar
 import kotlinx.android.synthetic.main.activity_main.*
 import java.io.File
@@ -28,8 +29,7 @@ class MainActivity : AppCompatActivity() {
             user_password = signup_password.text.toString()
 
             if(user_password == ""){
-                val reminder = Snackbar.make(view, "Password can't be null!", Snackbar.LENGTH_SHORT)
-                reminder.show();
+                Toast.makeText(this, "Password can't be null!", Toast.LENGTH_SHORT)
             }
             else{
                 saved_password.writeText(user_password)
@@ -41,8 +41,9 @@ class MainActivity : AppCompatActivity() {
 
         }
         else{
-            val reminder = Snackbar.make(view, "You have signed up before! Please Login", Snackbar.LENGTH_SHORT)
-            reminder.show();
+            Toast.makeText(this, "You have signed up before! Please Login", Toast.LENGTH_SHORT).show()
+
+
         }
 
 

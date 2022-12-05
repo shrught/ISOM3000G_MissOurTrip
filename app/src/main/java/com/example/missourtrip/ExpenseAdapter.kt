@@ -26,6 +26,7 @@ class ExpenseAdapter(private var expenses: List<Expense>): RecyclerView.Adapter<
         val context = holder.name.context
 
         holder.name.text = expense.name
+        holder.amount.text = "$"+expense.amount.toString()
 
         holder.itemView.setOnClickListener {
             val intent = Intent(context, AddExpenseActivity::class.java).apply {
