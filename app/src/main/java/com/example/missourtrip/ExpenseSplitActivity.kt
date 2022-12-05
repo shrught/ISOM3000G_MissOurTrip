@@ -51,6 +51,7 @@ class ExpenseSplitActivity : AppCompatActivity() {
             amount1.text = splitAmount.toString()
             checkBox.isChecked = expense.settled
 
+
             Name.setText(NameArray[0].toString())
             NameArray.removeAt(0)
 
@@ -180,18 +181,38 @@ class ExpenseSplitActivity : AppCompatActivity() {
                     insert(expense)
                 }
                 else{
-                    val expense = Expense(
-                        expense.id,
-                        name.toString(),
-                        amount!!.toDouble(),
-                        currency.toString(),
-                        date.toString(),
-                        category.toString(),
-                        splitNo,
-                        splitName,
-                        checkBox.isChecked
-                    )
-                    update(expense)
+                    var settledAmount = (amount!!.toDouble())/splitNo
+                    if(checkBox.isChecked){
+                        val expense = Expense(
+                            expense.id,
+                            name.toString(),
+                            settledAmount.toDouble(),
+                            currency.toString(),
+                            date.toString(),
+                            category.toString(),
+                            splitNo,
+                            splitName,
+                            checkBox.isChecked
+                        )
+                        update(expense)
+
+                    }
+                    else{
+                        val expense = Expense(
+                            expense.id,
+                            name.toString(),
+                            amount!!.toDouble(),
+                            currency.toString(),
+                            date.toString(),
+                            category.toString(),
+                            splitNo,
+                            splitName,
+                            checkBox.isChecked
+                        )
+                        update(expense)
+
+                    }
+
                 }
                 val intent = Intent(this, ExpenseActivity::class.java)
                 startActivity(intent)
