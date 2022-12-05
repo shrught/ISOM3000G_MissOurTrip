@@ -11,7 +11,7 @@ import kotlin.collections.ArrayList
 data class Expense(
     @PrimaryKey(autoGenerate = true) val id: Int,
     val name: String,
-    val amount: Double,
+    var amount: Double,
     val currency: String,
     val date: String,
     val category: String,
