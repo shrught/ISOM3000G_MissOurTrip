@@ -30,11 +30,6 @@ class editCategory : AppCompatActivity(){
         cate_save_btn.setOnClickListener {
             var Newdescription = cate_desc.text.toString()
 
-            cate_name.addTextChangedListener {
-                if(it!!.count() > 0){
-                    warningAddCate.text = ""
-                }
-            }
 
             val category = Category( name.toString(), Newdescription)
             println(category)

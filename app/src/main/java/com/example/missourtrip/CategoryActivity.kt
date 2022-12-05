@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.content.Intent
 import android.graphics.Color
 import android.view.View
+import android.widget.Toast
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.ItemTouchHelper
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -21,6 +22,7 @@ import java.io.File
 class CategoryActivity : AppCompatActivity() {
     private lateinit var deletedCategory: Category
     private lateinit var categories: List<Category>
+    private lateinit var expenses: List<Expense>
     private lateinit var oldCategories: List<Category>
     private lateinit var categoryAdapter: CategoryAdapter
     private lateinit var linearLayoutManager_cat: LinearLayoutManager
@@ -37,7 +39,7 @@ class CategoryActivity : AppCompatActivity() {
 
         db = Room.databaseBuilder(this,
             AppDatabase::class.java,
-            "categories").fallbackToDestructiveMigration().build()
+            "categories").allowMainThreadQueries().fallbackToDestructiveMigration().build()
 
 
         recycleView_cat.apply {
@@ -83,10 +85,16 @@ class CategoryActivity : AppCompatActivity() {
     private fun deletedCategory(category: Category){
         deletedCategory = category
         oldCategories = categories
+        expenses = db.expenseDao().getAll()
+
+        Toast.makeText(this, "Category deleted.", Toast.LENGTH_SHORT).show()
 
         GlobalScope.launch {
+            expenses = expenses.filter { it.category == category.name}
+            for (expense in expenses){
+                db.expenseDao().delete(expense)
+            }
             db.categoryDao().delete(category)
-
             categories = categories.filter { it.name != category.name}
             runOnUiThread {}
         }
