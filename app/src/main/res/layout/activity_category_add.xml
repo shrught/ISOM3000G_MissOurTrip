@@ -12,7 +12,7 @@
         android:orientation="vertical">
 
         <TextView
-            android:id="@+id/textView10"
+            android:id="@+id/cate_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="30dp"
@@ -41,7 +41,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.099"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView10" />
+                app:layout_constraintTop_toBottomOf="@+id/cate_title" />
 
             <EditText
                 android:id="@+id/cate_name"
@@ -70,10 +70,11 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="30dp"
-                android:text="@string/desciption"
+                android:text="@string/description"
                 android:textSize="20sp" />
 
             <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/desc"
                 android:layout_width="224dp"
                 android:layout_height="256dp"
                 android:outlineProvider="none"
@@ -107,7 +108,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.099"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView10" />
+                app:layout_constraintTop_toBottomOf="@+id/cate_title" />
         </LinearLayout>
 
         <LinearLayout
@@ -127,13 +128,11 @@
                     android:id="@+id/cate_cancel_btn"
                     android:layout_width="118dp"
                     android:layout_height="58dp"
-                    android:backgroundTint="@color/teal_700"
                     android:text="@string/cancel"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.238"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/exp_name3"
-                    tools:ignore="TextContrastCheck" />
+                    app:layout_constraintTop_toBottomOf="@+id/exp_name3" />
             </LinearLayout>
 
             <LinearLayout
@@ -147,13 +146,11 @@
                     android:id="@+id/cate_save_btn"
                     android:layout_width="118dp"
                     android:layout_height="58dp"
-                    android:backgroundTint="@color/teal_700"
                     android:text="@string/save"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.764"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/exp_name3"
-                    tools:ignore="TextContrastCheck" />
+                    app:layout_constraintTop_toBottomOf="@+id/exp_name3" />
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>

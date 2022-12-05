@@ -12,3 +12,4 @@ class Currency (
     var CNY: Double,
     var NZD: Double
         )
+

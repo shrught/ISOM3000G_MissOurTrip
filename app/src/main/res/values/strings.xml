@@ -1,12 +1,12 @@
 <resources>
     <string name="app_name">MissOurTrip</string>
-    <string name="welcome_back_to_missourtrip">Welcome back to MissOurTrip!</string>
+    <string name="welcome_back">Welcome back !</string>
     <string name="password">Password</string>
     <string name="enter_password">Enter Password</string>
     <string name="login">Login</string>
     <string name="reset_password"><u>Reset Password?</u></string>
     <string name="signup">signup</string>
-    <string name="already_registered_login_here"><u>Already registered? Login here...</u></string>
+    <string name="already_registered_login_here"><u>Already registered? Login here</u></string>
     <string name="new_to_missourtrip_sign_up_with_a_new_password">New to MissOurTrip? Sign up with a new password!</string>
     <string name="new_to_missourtrip">New to MissOurTrip?</string>
     <string name="sign_up_with_a_new_password">Sign up with a new password</string>
@@ -33,9 +33,9 @@
     <string name="add_participants">Add participants</string>
     <string name="categories">Categories</string>
     <string name="new_category">New Category</string>
-    <string name="desciption">Desciption:</string>
+    <string name="description">Description:</string>
     <string name="cancel">cancel</string>
-    <string name="statictics">Statictics</string>
+    <string name="statistics">Statistics</string>
     <string name="exchange_rates">Exchange Rates</string>
     <string name="base_currency">HKD: 1.00</string>
     <string name="usd">USD:</string>
@@ -49,5 +49,9 @@
     <string name="nzd">NZD:</string>
     <string name="last_updated">Last Updated</string>
     <string name="exchange_rate">Exchange Rate</string>
+    <string name="has_the_expense_settled">Has the expense settled?</string>
+    <string name="settled">Settled</string>
+    <string name="category_label">Category</string>
+    <string name="total_expense_label">Total expense:</string>
 
 </resources>

@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.content.Intent
 import android.graphics.Color
 import android.view.View
+import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.ItemTouchHelper
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -35,15 +36,15 @@ class CategoryActivity : AppCompatActivity() {
         linearLayoutManager_cat = LinearLayoutManager(this)
 
         db = Room.databaseBuilder(this,
-        AppDatabase::class.java,
-        "categories").fallbackToDestructiveMigration().build()
+            AppDatabase::class.java,
+            "categories").fallbackToDestructiveMigration().build()
 
 
         recycleView_cat.apply {
             adapter = categoryAdapter
             layoutManager = linearLayoutManager_cat
         }
-
+        recycleView_cat.addItemDecoration(DividerItemDecoration(this, DividerItemDecoration.VERTICAL))
         //swipe to remove
         val itemTouchHelper = object : ItemTouchHelper.SimpleCallback(0,ItemTouchHelper.LEFT){
             override fun onMove(
@@ -55,6 +56,7 @@ class CategoryActivity : AppCompatActivity() {
             }
 
             override fun onSwiped(viewHolder: RecyclerView.ViewHolder, direction: Int) {
+
                 deletedCategory(categories[viewHolder.adapterPosition])
             }
         }
@@ -85,7 +87,7 @@ class CategoryActivity : AppCompatActivity() {
         GlobalScope.launch {
             db.categoryDao().delete(category)
 
-            categories = categories.filter { it.id != category.id }
+            categories = categories.filter { it.name != category.name}
             runOnUiThread {}
         }
     }

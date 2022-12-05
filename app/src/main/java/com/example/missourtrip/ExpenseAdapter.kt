@@ -21,12 +21,18 @@ class ExpenseAdapter(private var expenses: List<Expense>): RecyclerView.Adapter<
         return ExpenseHolder(view)
     }
 
-    override fun onBindViewHolder(holder: ExpenseHolder, position: Int) {
+    override fun onBindViewHolder(holder: ExpenseAdapter.ExpenseHolder, position: Int) {
         val expense = expenses[position]
+        val context = holder.name.context
 
         holder.name.text = expense.name
-        holder.amount.text = "$%.2f".format(expense.amount)
 
+        holder.itemView.setOnClickListener {
+            val intent = Intent(context, AddExpenseActivity::class.java).apply {
+                putExtra("expense", expense)
+            }
+            context.startActivity(intent)
+        }
     }
 
     override fun getItemCount(): Int {

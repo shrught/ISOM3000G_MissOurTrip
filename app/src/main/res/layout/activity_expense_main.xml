@@ -52,11 +52,9 @@
                     android:id="@+id/add_btn"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:backgroundTint="@color/teal_700"
                     android:text="@string/add"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    tools:ignore="TextContrastCheck" />
+                    app:layout_constraintStart_toStartOf="parent" />
             </LinearLayout>
 
             <LinearLayout
@@ -69,12 +67,9 @@
                     android:id="@+id/export_btn"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:backgroundTint="@color/teal_700"
                     android:text="@string/export"
-                    android:textColor="#FFFFFF"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    tools:ignore="TextContrastCheck" />
+                    app:layout_constraintStart_toStartOf="parent" />
             </LinearLayout>
 
         </LinearLayout>

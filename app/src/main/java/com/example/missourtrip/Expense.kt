@@ -5,17 +5,20 @@ import androidx.room.Entity
 import androidx.room.PrimaryKey
 import java.io.Serializable
 import java.util.*
+import kotlin.collections.ArrayList
 
 @Entity(tableName = "expenses")
 data class Expense(
-    @PrimaryKey(autoGenerate = true)
-    val id: Int,
+    @PrimaryKey(autoGenerate = true) val id: Int,
     val name: String,
     val amount: Double,
-    //val currency: String,
-    //val date: String,
-    //val category: String,
-    //val split: Boolean
-    ) {
+    val currency: String,
+    val date: String,
+    val category: String,
+    val split: Int,
+    val splitName: String,
+    val settled: Boolean
+
+):Serializable {
 
 }
