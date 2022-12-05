@@ -93,7 +93,7 @@ class ExpenseActivity : AppCompatActivity() {
 
         var simpleExpenseList = arrayListOf<List<String>>()
         for(expense in dbExport.expenseDao().getAll()){
-            simpleExpenseList.add(listOf(expense.name, expense.amount.toString(), expense.category) )
+            simpleExpenseList.add(listOf(expense.name, expense.amount.toString(), expense.currency, expense.date ,expense.category) )
         }
         csvWriter().writeAll(simpleExpenseList, exportCsv)
         Toast.makeText(this,"Export Successful", Toast.LENGTH_SHORT).show()
