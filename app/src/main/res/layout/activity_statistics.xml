@@ -57,7 +57,7 @@
             android:id="@+id/expense_label"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/expenses"
+            android:text="@string/category_label"
             android:textSize="20sp"
             android:textStyle="bold" />
 
@@ -69,7 +69,7 @@
             android:id="@+id/category_label"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/category_label"
+            android:text="@string/expenses"
             android:textSize="20sp"
             android:textStyle="bold" />
 
