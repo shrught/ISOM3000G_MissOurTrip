@@ -26,7 +26,8 @@ class CategoryActivity : AppCompatActivity() {
     private lateinit var oldCategories: List<Category>
     private lateinit var categoryAdapter: CategoryAdapter
     private lateinit var linearLayoutManager_cat: LinearLayoutManager
-    private lateinit var db: AppDatabase
+    private lateinit var db_cat: AppDatabase
+    private lateinit var db_exp: AppDatabase
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -37,10 +38,16 @@ class CategoryActivity : AppCompatActivity() {
         categoryAdapter = CategoryAdapter(categories)
         linearLayoutManager_cat = LinearLayoutManager(this)
 
-        db = Room.databaseBuilder(this,
+        db_exp= Room.databaseBuilder(this,
+            AppDatabase::class.java,
+            "expenses").allowMainThreadQueries().fallbackToDestructiveMigration().build()
+
+
+        db_cat = Room.databaseBuilder(this,
             AppDatabase::class.java,
             "categories").allowMainThreadQueries().fallbackToDestructiveMigration().build()
 
+        expenses = db_exp.expenseDao().getAll()
 
         recycleView_cat.apply {
             adapter = categoryAdapter
@@ -58,9 +65,8 @@ class CategoryActivity : AppCompatActivity() {
             }
 
             override fun onSwiped(viewHolder: RecyclerView.ViewHolder, direction: Int) {
-
                 deletedCategory(categories[viewHolder.adapterPosition])
-            }
+                }
         }
 
         val swipeHelper = ItemTouchHelper(itemTouchHelper)
@@ -75,28 +81,32 @@ class CategoryActivity : AppCompatActivity() {
 
     private fun fetchAllCate(){
         GlobalScope.launch {
-            categories = db.categoryDao().getAll()
+            categories = db_cat.categoryDao().getAll()
             runOnUiThread{
                 categoryAdapter.setData(categories)
             }
         }
     }
 
+
+
     private fun deletedCategory(category: Category){
         deletedCategory = category
         oldCategories = categories
-        expenses = db.expenseDao().getAll()
+        expenses = expenses.filter { it.category == category.name}
+        if (expenses.isEmpty()) {
+            Toast.makeText(this, "Category deleted.", Toast.LENGTH_SHORT).show()
 
-        Toast.makeText(this, "Category deleted.", Toast.LENGTH_SHORT).show()
+            GlobalScope.launch {
 
-        GlobalScope.launch {
-            expenses = expenses.filter { it.category == category.name}
-            for (expense in expenses){
-                db.expenseDao().delete(expense)
+                db_cat.categoryDao().delete(category)
+                categories = categories.filter { it.name != category.name}
+                runOnUiThread {}
             }
-            db.categoryDao().delete(category)
-            categories = categories.filter { it.name != category.name}
-            runOnUiThread {}
+        }
+        else{
+            Toast.makeText(this, "This category cannot be deleted. Please delete all related expenses first.", Toast.LENGTH_SHORT).show()
+            fetchAllCate()
         }
     }
 
